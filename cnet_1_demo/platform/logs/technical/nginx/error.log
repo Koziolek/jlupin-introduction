@@ -1,0 +1,24 @@
+2018/09/19 13:05:53 [error] 17280#6820: *11212 [lua] core.lua:156: [JLUPIN BALANCER TIMER] Worker 17280: Could not lock the balancing process (exists), context: ngx.timer
+2018/09/19 13:06:49 [error] 17280#6820: *11470 [lua] core.lua:156: [JLUPIN BALANCER TIMER] Worker 17280: Could not lock the balancing process (exists), context: ngx.timer
+2018/09/19 13:07:25 [error] 17280#6820: *11637 [lua] core.lua:156: [JLUPIN BALANCER TIMER] Worker 17280: Could not lock the balancing process (exists), context: ngx.timer
+2018/09/19 13:08:07 [error] 8164#772: *11837 [lua] core.lua:156: [JLUPIN BALANCER TIMER] Worker 8164: Could not lock the balancing process (exists), context: ngx.timer
+2018/09/19 13:08:34 [error] 17280#6820: *11953 [lua] core.lua:156: [JLUPIN BALANCER TIMER] Worker 17280: Could not lock the balancing process (exists), context: ngx.timer
+2018/09/19 13:09:10 [error] 8164#772: *12122 [lua] core.lua:156: [JLUPIN BALANCER TIMER] Worker 8164: Could not lock the balancing process (exists), context: ngx.timer
+2018/09/19 13:09:16 [error] 8164#772: *12154 [lua] core.lua:156: [JLUPIN BALANCER TIMER] Worker 8164: Could not lock the balancing process (exists), context: ngx.timer
+2018/09/19 13:09:22 [error] 8164#772: *12178 [lua] core.lua:156: [JLUPIN BALANCER TIMER] Worker 8164: Could not lock the balancing process (exists), context: ngx.timer
+2018/09/19 13:58:51 [error] 17280#6820: *25896 [lua] core.lua:156: [JLUPIN BALANCER TIMER] Worker 17280: Could not lock the balancing process (exists), context: ngx.timer
+2018/09/19 16:13:25 [error] 8164#772: *63189 [lua] http.lua:38: HttpRequestError(): [JLUPIN] Worker 8164: Error message: no available microservice to handle the request, client: 127.0.0.1, server: edge8000, request: "GET /customer/ HTTP/1.1", host: "localhost:8000"
+2018/09/19 16:15:38 [error] 8164#772: *63834 [lua] http.lua:38: HttpRequestError(): [JLUPIN] Worker 8164: Error message: no available microservice to handle the request, client: 127.0.0.1, server: edge8000, request: "GET /gateway/customer/ HTTP/1.1", host: "localhost:8000"
+2018/09/19 16:15:42 [error] 8164#772: *63836 [lua] http.lua:38: HttpRequestError(): [JLUPIN] Worker 8164: Error message: no available microservice to handle the request, client: 127.0.0.1, server: edge8000, request: "GET /gateway/customer/ HTTP/1.1", host: "localhost:8000"
+2018/09/19 16:15:44 [error] 8164#772: *63855 [lua] http.lua:38: HttpRequestError(): [JLUPIN] Worker 8164: Error message: no available microservice to handle the request, client: 127.0.0.1, server: edge8000, request: "GET /gateway/customer/ HTTP/1.1", host: "localhost:8000"
+2018/09/19 18:05:12 [error] 8164#772: *64719 lua tcp socket connect timed out, context: ngx.timer
+2018/09/19 18:05:12 [error] 8164#772: *64719 [lua] discover.lua:23: DiscoverNode(): [JLUPIN DISCOVER] Worker 8164: Node discovery has failed (timeout), context: ngx.timer
+2018/09/19 18:05:12 [error] 8164#772: *64719 [lua] discover.lua:100: DiscoverPeers(): [JLUPIN DISCOVER] Worker 8164: Node is UNAVAILABLE, aborting, context: ngx.timer
+2018/09/19 18:05:12 [error] 8164#772: *64719 [lua] discover.lua:228: DiscoverMicroservices(): [JLUPIN DISCOVER] Worker 8164: Node is  UNAVAILABLE, aborting, context: ngx.timer
+2018/09/19 18:05:12 [error] 8164#772: *64719 [lua] discover.lua:480: DiscoverFilteredMicroservices(): [JLUPIN DISCOVER] Worker 8164: Node is  UNAVAILABLE, aborting, context: ngx.timer
+2018/09/19 18:05:12 [error] 8164#772: *64719 [lua] discover.lua:606: DiscoverRemoteMicroservices(): [JLUPIN DISCOVER] Worker 8164: Node is  UNAVAILABLE, aborting, context: ngx.timer
+2018/09/19 18:05:12 [error] 8164#772: *64719 [lua] discover.lua:750: DiscoverContexts(): [JLUPIN DISCOVER] Worker 8164: Node is  UNAVAILABLE, aborting, context: ngx.timer
+2018/09/19 18:05:12 [error] 8164#772: *64719 [lua] discover.lua:909: DiscoverRoutes(): [JLUPIN DISCOVER] Worker 8164: Node is  UNAVAILABLE, aborting, context: ngx.timer
+2018/09/20 10:15:03 [error] 6760#14528: *1538 [lua] core.lua:156: [JLUPIN BALANCER TIMER] Worker 6760: Could not lock the balancing process (exists), context: ngx.timer
+2018/09/20 10:31:35 [error] 1648#14612: *1230 [lua] core.lua:156: [JLUPIN BALANCER TIMER] Worker 1648: Could not lock the balancing process (exists), context: ngx.timer
+2018/09/20 11:34:15 [error] 7864#13528: *18586 [lua] core.lua:156: [JLUPIN BALANCER TIMER] Worker 7864: Could not lock the balancing process (exists), context: ngx.timer

@@ -1,0 +1,944 @@
+[2018-09-19 12:20:58]
+
+       _ _                 _         _____  _       _    __                     
+      | | |               (_)       |  __ \| |     | |  / _|                    
+      | | |    _   _ _ __  _ _ __   | |__) | | __ _| |_| |_ ___  _ __ _ __ ___  
+  _   | | |   | | | | '_ \| | '_ \  |  ___/| |/ _` | __|  _/ _ \| '__| '_ ` _ \ 
+ | |__| | |___| |_| | |_) | | | | | | |    | | (_| | |_| || (_) | |  | | | | | |
+  \____/|______\__,_| .__/|_|_| |_| |_|    |_|\__,_|\__|_| \___/|_|  |_| |_| |_|
+                    | |                                                         
+                    |_|                                                         
+
+
+[2018-09-19 12:20:58]
+
+  __   _____  ___          _____                           
+ /_ | | ____|/ _ \        / ____|                          
+  | | | |__ | | | |______| |    _   _ _ __  _ __ _   _ ___ 
+  | | |___ \| | | |______| |   | | | | '_ \| '__| | | / __|
+  | |_ ___) | |_| |      | |___| |_| | |_) | |  | |_| \__ \
+  |_(_)____(_)___/        \_____\__, | .__/|_|   \__,_|___/
+                                 __/ | |                   
+                                |___/|_|                   
+
+
+[2018-09-19 12:20:58]name:JLupin Platform Enterprise Edition
+[2018-09-19 12:20:58]code:CYPRUS
+[2018-09-19 12:20:58]version:1.5.0.2-ee
+[2018-09-19 12:20:58]commit no:a6640236
+
+[2018-09-19 12:20:58]initializing main server
+[2018-09-19 12:21:02]starting event log manager
+[2018-09-19 12:21:02]event log manager started correctly
+[2018-09-19 12:21:04]lock by type:MICROSERVICE_HEALTH_CHECK is lock by operation:START
+[2018-09-19 12:21:04]lock by type:MICROSERVICE_OS_PROCESS_MANIPULATION is lock by operation:START
+[2018-09-19 12:21:04]lock by type:MICROSERVICE_OS_PROCESS_MANIPULATION is unlock by operation:START
+[2018-09-19 12:21:04]lock by type:MICROSERVICE_HEALTH_CHECK is unlock by operation:START
+[2018-09-19 12:21:04]JMX manager started
+[2018-09-19 12:21:04]lock by type:TECHNICAL_PROCESS_HEALTH_CHECK is lock by operation:SELF_START
+[2018-09-19 12:21:04]lock by type:TECHNICAL_OS_PROCESS_MANIPULATION is lock by operation:SELF_START
+[2018-09-19 12:21:04]found class executor to load technical process executor:NGINX - class com.jlupin.impl.manager.technicalprocess.executor.impl.nginx.JLupinNginxWindowsTechnicalProcessExecutorImpl
+[2018-09-19 12:21:04]nginx pid does not exists in file, and it seems it is not turn on, so let`s start them
+[2018-09-19 12:21:04]start executing NGINX command:start for:WINDOWS
+[2018-09-19 12:21:09]process output after executing NGINX command:start for:WINDOWS is null
+[2018-09-19 12:21:10]nginx was started correctly
+[2018-09-19 12:21:10]lock by type:TECHNICAL_OS_PROCESS_MANIPULATION is unlock by operation:SELF_START
+[2018-09-19 12:21:10]lock by type:TECHNICAL_PROCESS_HEALTH_CHECK is unlock by operation:SELF_START
+[2018-09-19 12:21:11] 
+ --------------------------------------------------------------
+|RUNNING TECHNICAL PROCESSES:                                 |
+ --------------------------------------------------------------
+
+ --------------------------------------------------------------
+|TECHNICAL PROCESS SUMMARY:                                   |
+ --------------------------------------------------------------
+|NAME:NGINX                                                   |
+ --------------------------------------------------------------
+|PID:8868                                                     |
+ --------------------------------------------------------------
+
+[2018-09-19 12:21:11]
+there is currently no active microservices
+[2018-09-19 12:21:11] 
+ --------------------------------------------------------------
+|RUNNING SERVERS SUMMARY                                       |
+ --------------------------------------------------------------
+|NAME                                          |PORT           |
+ --------------------------------------------------------------
+|JLRMC                                         |9090           |
+ --------------------------------------------------------------
+|ELASTIC_HTTP                                  |8082           |
+ --------------------------------------------------------------
+|QUEUE                                         |9095           |
+ --------------------------------------------------------------
+|TRANSMISSION                                  |9096           |
+ --------------------------------------------------------------
+|INFORMATION                                   |9097           |
+ --------------------------------------------------------------
+|INFORMATION_HTTP                              |9098           |
+ --------------------------------------------------------------
+
+[2018-09-19 12:21:11]JLupin Platform initialized correctly in:12177 milliseconds, process id:14816
+[2018-09-19 18:07:14]java.lang.InterruptedException
+[2018-09-19 18:07:14]	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+[2018-09-19 18:07:14]	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2088)
+[2018-09-19 18:07:14]	at java.util.concurrent.ArrayBlockingQueue.poll(ArrayBlockingQueue.java:418)
+[2018-09-19 18:07:14]	at com.jlupin.impl.util.process.JLupinProcessUtil.executeInnerOSProcessAndCloseOpenedStreams(JLupinProcessUtil.java:62)
+[2018-09-19 18:07:14]	at com.jlupin.impl.util.os.JLupinOSUtil.isProcessAliveByIdInternal(JLupinOSUtil.java:86)
+[2018-09-19 18:07:14]	at com.jlupin.impl.util.os.JLupinOSUtil.isProcessAliveById(JLupinOSUtil.java:36)
+[2018-09-19 18:07:14]	at com.jlupin.impl.manager.technicalprocess.helper.JLupinTechnicalProcessKeeperHelper.checkTechnicalProcesses(JLupinTechnicalProcessKeeperHelper.java:117)
+[2018-09-19 18:07:14]	at com.jlupin.impl.manager.technicalprocess.helper.JLupinTechnicalProcessKeeperHelper.access$000(JLupinTechnicalProcessKeeperHelper.java:35)
+[2018-09-19 18:07:14]	at com.jlupin.impl.manager.technicalprocess.helper.JLupinTechnicalProcessKeeperHelper$1.call(JLupinTechnicalProcessKeeperHelper.java:74)
+[2018-09-19 18:07:14]	at com.jlupin.impl.util.loop.JLupinLoopManager$2.run(JLupinLoopManager.java:50)
+[2018-09-19 18:07:14]	at java.lang.Thread.run(Thread.java:748)
+[2018-09-20 10:08:33]
+
+       _ _                 _         _____  _       _    __                     
+      | | |               (_)       |  __ \| |     | |  / _|                    
+      | | |    _   _ _ __  _ _ __   | |__) | | __ _| |_| |_ ___  _ __ _ __ ___  
+  _   | | |   | | | | '_ \| | '_ \  |  ___/| |/ _` | __|  _/ _ \| '__| '_ ` _ \ 
+ | |__| | |___| |_| | |_) | | | | | | |    | | (_| | |_| || (_) | |  | | | | | |
+  \____/|______\__,_| .__/|_|_| |_| |_|    |_|\__,_|\__|_| \___/|_|  |_| |_| |_|
+                    | |                                                         
+                    |_|                                                         
+
+
+[2018-09-20 10:08:33]
+
+  __   _____  ___          _____                           
+ /_ | | ____|/ _ \        / ____|                          
+  | | | |__ | | | |______| |    _   _ _ __  _ __ _   _ ___ 
+  | | |___ \| | | |______| |   | | | | '_ \| '__| | | / __|
+  | |_ ___) | |_| |      | |___| |_| | |_) | |  | |_| \__ \
+  |_(_)____(_)___/        \_____\__, | .__/|_|   \__,_|___/
+                                 __/ | |                   
+                                |___/|_|                   
+
+
+[2018-09-20 10:08:33]name:JLupin Platform Enterprise Edition
+[2018-09-20 10:08:33]code:CYPRUS
+[2018-09-20 10:08:33]version:1.5.0.2-ee
+[2018-09-20 10:08:33]commit no:a6640236
+
+[2018-09-20 10:08:33]initializing main server
+[2018-09-20 10:08:38]starting event log manager
+[2018-09-20 10:08:38]event log manager started correctly
+[2018-09-20 10:08:38]load configuration is executing now and takes so far:5 seconds (5005 milliseconds)
+[2018-09-20 10:08:39]configuring new microservice:gateway with ports amount:6
+[2018-09-20 10:08:40]available ports for microservice:gateway:[20000, 20001, 20002, 20003, 20004, 20005]
+[2018-09-20 10:08:40]configuring new microservice:customer with ports amount:8
+[2018-09-20 10:08:40]available ports for microservice:customer:[20006, 20007, 20008, 20009, 20010, 20011, 20012, 20013]
+[2018-09-20 10:08:40]configuring new microservice:order with ports amount:8
+[2018-09-20 10:08:41]available ports for microservice:order:[20014, 20015, 20016, 20017, 20018, 20019, 20020, 20021]
+[2018-09-20 10:08:41]microservices start in order:[order, customer, gateway]
+[2018-09-20 10:08:41]lock by type:MICROSERVICE_HEALTH_CHECK is lock by operation:START
+[2018-09-20 10:08:41]lock by type:MICROSERVICE_OS_PROCESS_MANIPULATION is lock by operation:START
+[2018-09-20 10:08:41]start not running processes in parallel mode:false
+[2018-09-20 10:08:41]microservice:order is new, try start them...
+[2018-09-20 10:08:41]isArchive flag is set to false
+[2018-09-20 10:08:41]already used memory for all running microservices is:0 (0 bytes)
+[2018-09-20 10:08:41]this microservice requires in bytes:268435456(256.0 megabytes)
+[2018-09-20 10:08:41]successfully increased used memory for all microservices and now is:268435456 (256.0 megabytes)
+[2018-09-20 10:08:41]init os process for microservice:order
+[2018-09-20 10:08:41]start sending command:ECHO to microservice:order linked to address:localhost and port:20018 with timeout:30000
+[2018-09-20 10:08:41]time remaining to finish operation:ECHO on microservice:order:30 seconds (30000 milliseconds)
+[2018-09-20 10:08:42]copying microservice:order files to temp classpath:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\start\temp\temp_order\temp_1537430919955
+[2018-09-20 10:08:42]now main microservice is waiting:90000 milliseconds for each microservice input stream (standard, error) to initialize microservice microservice:order by operating system
+[2018-09-20 10:08:45]init new microservice for microservice:order is executing now and takes so far:4 seconds (4584 milliseconds)
+[2018-09-20 10:08:47]init new microservice for microservice:order is executing now and takes so far:5 seconds (5979 milliseconds)
+[2018-09-20 10:08:47]microservice:order returns init microservice information:
+found APPLICATION section in configuration file and try create JLupinApplicationContainer by producer class:pl.koziolekweb.cnet.configuration.OrderJLupinConfiguration
+produced with success JLupinApplicationContainer:pl.koziolekweb.cnet.configuration.OrderJLupinConfiguration$1
+microservice:order identity by os microservice id:15372 started correctly
+memory state for local server after start microservice:
+total memory:149.0 megabytes
+free  memory:59.9  megabytes
+used  memory:89.1  megabytes
+max   memory:228.0 megabytes
+microservice identity by os microservice id:15372 for microservice:order initialized correctly
+[JLPIT]-[PROCESS_ID]15372[/PROCESS_ID]-[/JLPIT]
+[JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-09-20 10:08:47]start sending command:ECHO to microservice:order linked to address:localhost and port:20018 with timeout:30000
+[2018-09-20 10:08:47]time remaining to finish operation:ECHO on microservice:order:30 seconds (30000 milliseconds)
+[2018-09-20 10:08:47]successfully executed command:ECHO on microservice:order
+[2018-09-20 10:08:47]start sending command:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER to microservice:order linked to address:localhost and port:20018 with timeout:90000
+[2018-09-20 10:08:47]time remaining to finish operation:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER on microservice:order:90 seconds (90000 milliseconds)
+[2018-09-20 10:08:47]successfully executed command:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER on microservice:order
+[2018-09-20 10:08:47]start sending command:ECHO to microservice:order linked to address:localhost and port:20018 with timeout:30000
+[2018-09-20 10:08:47]time remaining to finish operation:ECHO on microservice:order:30 seconds (30000 milliseconds)
+[2018-09-20 10:08:47]successfully executed command:ECHO on microservice:order
+[2018-09-20 10:08:47]start sending command:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER to microservice:order linked to address:localhost and port:20018 with timeout:90000
+[2018-09-20 10:08:47]time remaining to finish operation:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER on microservice:order:90 seconds (90000 milliseconds)
+[2018-09-20 10:08:47]successfully executed command:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER on microservice:order
+[2018-09-20 10:08:47]start sending command:ADD_ADDTIONAL_INFORMATION_TO_MICROSERVICE_CONFIGURATION_FROM_MAIN_SERVER to microservice:order linked to address:localhost and port:20018 with timeout:90000
+[2018-09-20 10:08:47]time remaining to finish operation:ADD_ADDTIONAL_INFORMATION_TO_MICROSERVICE_CONFIGURATION_FROM_MAIN_SERVER on microservice:order:90 seconds (90000 milliseconds)
+[2018-09-20 10:08:47]successfully executed command:ADD_ADDTIONAL_INFORMATION_TO_MICROSERVICE_CONFIGURATION_FROM_MAIN_SERVER on microservice:order
+[2018-09-20 10:08:47]start sending command:ECHO to microservice:order linked to address:localhost and port:20018 with timeout:30000
+[2018-09-20 10:08:47]successfully executed command:ECHO on microservice:order
+[2018-09-20 10:08:47]time remaining to finish operation:ECHO on microservice:order:30 seconds (30000 milliseconds)
+[2018-09-20 10:08:47]start sending command:START_SERVERS to microservice:order linked to address:localhost and port:20018 with timeout:90000
+[2018-09-20 10:08:47]time remaining to finish operation:START_SERVERS on microservice:order:90 seconds (90000 milliseconds)
+[2018-09-20 10:08:47]output line from microservice:order during executing command:START_SERVERS:user.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\application\order
+[2018-09-20 10:08:47]output line from microservice:order during executing command:START_SERVERS:temp.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\start\temp
+[2018-09-20 10:08:47]output line from microservice:order during executing command:START_SERVERS:all microservers for microservice:order started correctly
+[2018-09-20 10:08:47]output line from microservice:order during executing command:START_SERVERS:servers are starting now and this operation takes so far:0 seconds (17 milliseconds)
+[2018-09-20 10:08:47]successfully executed command:START_SERVERS on microservice:order
+[2018-09-20 10:08:47]start sending command:ECHO to microservice:order linked to address:localhost and port:20018 with timeout:30000
+[2018-09-20 10:08:47]successfully executed command:ECHO on microservice:order
+[2018-09-20 10:08:47]time remaining to finish operation:ECHO on microservice:order:30 seconds (30000 milliseconds)
+[2018-09-20 10:08:47]start sending command:START_APPLICATION_CONTAINER to microservice:order linked to address:localhost and port:20018 with timeout:90000
+[2018-09-20 10:08:47]time remaining to finish operation:START_APPLICATION_CONTAINER on microservice:order:90 seconds (90000 milliseconds)
+[2018-09-20 10:08:49]output line from microservice:order during executing command:START_APPLICATION_CONTAINER:remote service names:[createOrderService, searchOrderService]
+[2018-09-20 10:08:49]output line from microservice:order during executing command:START_APPLICATION_CONTAINER:application container is loading now and this operation takes so far:2 seconds (2432 milliseconds)
+[2018-09-20 10:08:49]output line from microservice:order during executing command:START_APPLICATION_CONTAINER:application container for:order started correctly
+[2018-09-20 10:08:49]output line from microservice:order during executing command:START_APPLICATION_CONTAINER:System.out and System.err was redirect to:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\logs\server\order\order_system_out_%g.log
+[2018-09-20 10:08:49]successfully executed command:START_APPLICATION_CONTAINER on microservice:order
+[2018-09-20 10:08:49]start sending command:ECHO to microservice:order linked to address:localhost and port:20018 with timeout:30000
+[2018-09-20 10:08:49]time remaining to finish operation:ECHO on microservice:order:30 seconds (30000 milliseconds)
+[2018-09-20 10:08:49]successfully executed command:ECHO on microservice:order
+[2018-09-20 10:08:49]start sending command:START_REGISTERED_RESOURCES to microservice:order linked to address:localhost and port:20018 with timeout:90000
+[2018-09-20 10:08:49]time remaining to finish operation:START_REGISTERED_RESOURCES on microservice:order:90 seconds (90000 milliseconds)
+[2018-09-20 10:08:50]successfully executed command:START_REGISTERED_RESOURCES on microservice:order
+[2018-09-20 10:08:50]start procedure 'startReadProcessStreams' for microservice:order
+[2018-09-20 10:08:50]stop procedure 'startReadProcessStreams' for microservice:order
+[2018-09-20 10:08:50]added configuration to process manager load balancer for process:order
+[2018-09-20 10:08:50]microservice:customer is new, try start them...
+[2018-09-20 10:08:50]isArchive flag is set to false
+[2018-09-20 10:08:50]already used memory for all running microservices is:268435456 (256.0 megabytes)
+[2018-09-20 10:08:50]this microservice requires in bytes:268435456(256.0 megabytes)
+[2018-09-20 10:08:50]successfully increased used memory for all microservices and now is:536870912 (512.0 megabytes)
+[2018-09-20 10:08:50]init os process for microservice:customer
+[2018-09-20 10:08:50]start sending command:ECHO to microservice:customer linked to address:localhost and port:20010 with timeout:30000
+[2018-09-20 10:08:50]time remaining to finish operation:ECHO on microservice:customer:30 seconds (30000 milliseconds)
+[2018-09-20 10:08:51]copying microservice:customer files to temp classpath:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\start\temp\temp_customer\temp_1537430919766
+[2018-09-20 10:08:52]now main microservice is waiting:90000 milliseconds for each microservice input stream (standard, error) to initialize microservice microservice:customer by operating system
+[2018-09-20 10:08:54]init new microservice for microservice:customer is executing now and takes so far:4 seconds (4385 milliseconds)
+[2018-09-20 10:08:57]init new microservice for microservice:customer is executing now and takes so far:7 seconds (7072 milliseconds)
+[2018-09-20 10:08:57]microservice:customer returns init microservice information:
+found APPLICATION section in configuration file and try create JLupinApplicationContainer by producer class:pl.koziolekweb.cnet.configuration.CustomerJLupinConfiguration
+produced with success JLupinApplicationContainer:pl.koziolekweb.cnet.configuration.CustomerJLupinConfiguration$1
+microservice:customer identity by os microservice id:11184 started correctly
+memory state for local server after start microservice:
+total memory:170.0 megabytes
+free  memory:86.1  megabytes
+used  memory:83.9  megabytes
+max   memory:228.0 megabytes
+microservice identity by os microservice id:11184 for microservice:customer initialized correctly
+[JLPIT]-[PROCESS_ID]11184[/PROCESS_ID]-[/JLPIT]
+[JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-09-20 10:08:57]start sending command:ECHO to microservice:customer linked to address:localhost and port:20010 with timeout:30000
+[2018-09-20 10:08:57]time remaining to finish operation:ECHO on microservice:customer:30 seconds (30000 milliseconds)
+[2018-09-20 10:08:57]successfully executed command:ECHO on microservice:customer
+[2018-09-20 10:08:57]start sending command:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER to microservice:customer linked to address:localhost and port:20010 with timeout:90000
+[2018-09-20 10:08:57]time remaining to finish operation:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER on microservice:customer:90 seconds (90000 milliseconds)
+[2018-09-20 10:08:57]successfully executed command:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER on microservice:customer
+[2018-09-20 10:08:57]start sending command:ECHO to microservice:customer linked to address:localhost and port:20010 with timeout:30000
+[2018-09-20 10:08:57]successfully executed command:ECHO on microservice:customer
+[2018-09-20 10:08:57]start sending command:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER to microservice:customer linked to address:localhost and port:20010 with timeout:90000
+[2018-09-20 10:08:57]successfully executed command:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER on microservice:customer
+[2018-09-20 10:08:57]time remaining to finish operation:ECHO on microservice:customer:30 seconds (30000 milliseconds)
+[2018-09-20 10:08:57]start sending command:ADD_ADDTIONAL_INFORMATION_TO_MICROSERVICE_CONFIGURATION_FROM_MAIN_SERVER to microservice:customer linked to address:localhost and port:20010 with timeout:90000
+[2018-09-20 10:08:57]time remaining to finish operation:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER on microservice:customer:90 seconds (90000 milliseconds)
+[2018-09-20 10:08:57]time remaining to finish operation:ADD_ADDTIONAL_INFORMATION_TO_MICROSERVICE_CONFIGURATION_FROM_MAIN_SERVER on microservice:customer:90 seconds (90000 milliseconds)
+[2018-09-20 10:08:57]successfully executed command:ADD_ADDTIONAL_INFORMATION_TO_MICROSERVICE_CONFIGURATION_FROM_MAIN_SERVER on microservice:customer
+[2018-09-20 10:08:57]start sending command:ECHO to microservice:customer linked to address:localhost and port:20010 with timeout:30000
+[2018-09-20 10:08:57]successfully executed command:ECHO on microservice:customer
+[2018-09-20 10:08:57]time remaining to finish operation:ECHO on microservice:customer:30 seconds (30000 milliseconds)
+[2018-09-20 10:08:57]start sending command:START_SERVERS to microservice:customer linked to address:localhost and port:20010 with timeout:90000
+[2018-09-20 10:08:57]time remaining to finish operation:START_SERVERS on microservice:customer:90 seconds (90000 milliseconds)
+[2018-09-20 10:08:57]output line from microservice:customer during executing command:START_SERVERS:user.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\application\customer
+[2018-09-20 10:08:57]output line from microservice:customer during executing command:START_SERVERS:temp.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\start\temp
+[2018-09-20 10:08:57]output line from microservice:customer during executing command:START_SERVERS:all microservers for microservice:customer started correctly
+[2018-09-20 10:08:57]output line from microservice:customer during executing command:START_SERVERS:servers are starting now and this operation takes so far:0 seconds (12 milliseconds)
+[2018-09-20 10:08:57]successfully executed command:START_SERVERS on microservice:customer
+[2018-09-20 10:08:57]start sending command:ECHO to microservice:customer linked to address:localhost and port:20010 with timeout:30000
+[2018-09-20 10:08:57]time remaining to finish operation:ECHO on microservice:customer:30 seconds (30000 milliseconds)
+[2018-09-20 10:08:57]successfully executed command:ECHO on microservice:customer
+[2018-09-20 10:08:57]start sending command:START_APPLICATION_CONTAINER to microservice:customer linked to address:localhost and port:20010 with timeout:90000
+[2018-09-20 10:08:57]time remaining to finish operation:START_APPLICATION_CONTAINER on microservice:customer:90 seconds (90000 milliseconds)
+[2018-09-20 10:08:59]output line from microservice:customer during executing command:START_APPLICATION_CONTAINER:remote service names:[searchCustomerService, createCustomerService]
+[2018-09-20 10:08:59]output line from microservice:customer during executing command:START_APPLICATION_CONTAINER:application container is loading now and this operation takes so far:1 seconds (1754 milliseconds)
+[2018-09-20 10:08:59]output line from microservice:customer during executing command:START_APPLICATION_CONTAINER:application container for:customer started correctly
+[2018-09-20 10:08:59]output line from microservice:customer during executing command:START_APPLICATION_CONTAINER:System.out and System.err was redirect to:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\logs\server\customer\customer_system_out_%g.log
+[2018-09-20 10:08:59]successfully executed command:START_APPLICATION_CONTAINER on microservice:customer
+[2018-09-20 10:08:59]start sending command:ECHO to microservice:customer linked to address:localhost and port:20010 with timeout:30000
+[2018-09-20 10:08:59]time remaining to finish operation:ECHO on microservice:customer:30 seconds (30000 milliseconds)
+[2018-09-20 10:08:59]successfully executed command:ECHO on microservice:customer
+[2018-09-20 10:08:59]start sending command:START_REGISTERED_RESOURCES to microservice:customer linked to address:localhost and port:20010 with timeout:90000
+[2018-09-20 10:08:59]time remaining to finish operation:START_REGISTERED_RESOURCES on microservice:customer:90 seconds (90000 milliseconds)
+[2018-09-20 10:08:59]successfully executed command:START_REGISTERED_RESOURCES on microservice:customer
+[2018-09-20 10:08:59]start procedure 'startReadProcessStreams' for microservice:customer
+[2018-09-20 10:08:59]stop procedure 'startReadProcessStreams' for microservice:customer
+[2018-09-20 10:08:59]added configuration to process manager load balancer for process:customer
+[2018-09-20 10:08:59]microservice:gateway is new, try start them...
+[2018-09-20 10:08:59]isArchive flag is set to false
+[2018-09-20 10:08:59]already used memory for all running microservices is:536870912 (512.0 megabytes)
+[2018-09-20 10:08:59]this microservice requires in bytes:536870912(512.0 megabytes)
+[2018-09-20 10:08:59]successfully increased used memory for all microservices and now is:1073741824 (1024.0 megabytes)
+[2018-09-20 10:08:59]init os process for microservice:gateway
+[2018-09-20 10:08:59]start sending command:ECHO to microservice:gateway linked to address:localhost and port:20002 with timeout:30000
+[2018-09-20 10:08:59]time remaining to finish operation:ECHO on microservice:gateway:30 seconds (30000 milliseconds)
+[2018-09-20 10:09:00]copying microservice:gateway files to temp classpath:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\start\temp\temp_gateway\temp_1537430919932
+[2018-09-20 10:09:01]adding to classpath microservice:gateway files from temp classpath:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\start\temp\temp_gateway\temp_1537430919932
+[2018-09-20 10:09:01]now main microservice is waiting:90000 milliseconds for each microservice input stream (standard, error) to initialize microservice microservice:gateway by operating system
+[2018-09-20 10:09:04]init new microservice for microservice:gateway is executing now and takes so far:4 seconds (4792 milliseconds)
+[2018-09-20 10:09:06]init new microservice for microservice:gateway is executing now and takes so far:6 seconds (6159 milliseconds)
+[2018-09-20 10:09:06]microservice:gateway returns init microservice information:
+microservice:gateway identity by os microservice id:2828 started correctly
+memory state for local server after start microservice:
+total memory:242.5 megabytes
+free  memory:110.1 megabytes
+used  memory:132.4 megabytes
+max   memory:455.5 megabytes
+microservice identity by os microservice id:2828 for microservice:gateway initialized correctly
+[JLPIT]-[PROCESS_ID]2828[/PROCESS_ID]-[/JLPIT]
+[JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-09-20 10:09:06]start sending command:ECHO to microservice:gateway linked to address:localhost and port:20002 with timeout:30000
+[2018-09-20 10:09:06]time remaining to finish operation:ECHO on microservice:gateway:30 seconds (30000 milliseconds)
+[2018-09-20 10:09:06]successfully executed command:ECHO on microservice:gateway
+[2018-09-20 10:09:06]start sending command:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER to microservice:gateway linked to address:localhost and port:20002 with timeout:90000
+[2018-09-20 10:09:06]time remaining to finish operation:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER on microservice:gateway:90 seconds (90000 milliseconds)
+[2018-09-20 10:09:06]successfully executed command:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER on microservice:gateway
+[2018-09-20 10:09:06]start sending command:ECHO to microservice:gateway linked to address:localhost and port:20002 with timeout:30000
+[2018-09-20 10:09:06]time remaining to finish operation:ECHO on microservice:gateway:30 seconds (30000 milliseconds)
+[2018-09-20 10:09:06]successfully executed command:ECHO on microservice:gateway
+[2018-09-20 10:09:06]start sending command:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER to microservice:gateway linked to address:localhost and port:20002 with timeout:90000
+[2018-09-20 10:09:06]time remaining to finish operation:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER on microservice:gateway:90 seconds (90000 milliseconds)
+[2018-09-20 10:09:06]successfully executed command:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER on microservice:gateway
+[2018-09-20 10:09:06]start sending command:ECHO to microservice:gateway linked to address:localhost and port:20002 with timeout:30000
+[2018-09-20 10:09:06]time remaining to finish operation:ECHO on microservice:gateway:30 seconds (30000 milliseconds)
+[2018-09-20 10:09:06]successfully executed command:ECHO on microservice:gateway
+[2018-09-20 10:09:06]start sending command:START_SERVERS to microservice:gateway linked to address:localhost and port:20002 with timeout:90000
+[2018-09-20 10:09:06]output line from microservice:gateway during executing command:START_SERVERS:user.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\application\gateway
+[2018-09-20 10:09:06]output line from microservice:gateway during executing command:START_SERVERS:temp.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\start\temp
+[2018-09-20 10:09:06]time remaining to finish operation:START_SERVERS on microservice:gateway:90 seconds (90000 milliseconds)
+[2018-09-20 10:09:07]output line from microservice:gateway during executing command:START_SERVERS:
+[2018-09-20 10:09:07]output line from microservice:gateway during executing command:START_SERVERS:  .   ____          _            __ _ _
+[2018-09-20 10:09:07]output line from microservice:gateway during executing command:START_SERVERS: /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+[2018-09-20 10:09:07]output line from microservice:gateway during executing command:START_SERVERS:( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+[2018-09-20 10:09:07]output line from microservice:gateway during executing command:START_SERVERS: \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+[2018-09-20 10:09:07]output line from microservice:gateway during executing command:START_SERVERS:  '  |____| .__|_| |_|_| |_\__, | / / / /
+[2018-09-20 10:09:07]output line from microservice:gateway during executing command:START_SERVERS: =========|_|==============|___/=/_/_/_/
+[2018-09-20 10:09:07]output line from microservice:gateway during executing command:START_SERVERS: :: Spring Boot ::        (v2.0.2.RELEASE)
+[2018-09-20 10:09:07]output line from microservice:gateway during executing command:START_SERVERS:
+[2018-09-20 10:09:11]output line from microservice:gateway during executing command:START_SERVERS:servers are starting now and this operation takes so far:5 seconds (5535 milliseconds)
+[2018-09-20 10:09:12]output line from microservice:gateway during executing command:START_SERVERS:bad log file exists try delete them:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\application\logs
+[2018-09-20 10:09:12]output line from microservice:gateway during executing command:START_SERVERS:all microservers for microservice:gateway started correctly
+[2018-09-20 10:09:12]output line from microservice:gateway during executing command:START_SERVERS:servers are starting now and this operation takes so far:6 seconds (6110 milliseconds)
+[2018-09-20 10:09:12]successfully executed command:START_SERVERS on microservice:gateway
+[2018-09-20 10:09:12]start sending command:ECHO to microservice:gateway linked to address:localhost and port:20002 with timeout:30000
+[2018-09-20 10:09:12]successfully executed command:ECHO on microservice:gateway
+[2018-09-20 10:09:12]start sending command:GET_MICROSERVICE_SYSTEM_PROPERTIES to microservice:gateway linked to address:localhost and port:20002 with timeout:90000
+[2018-09-20 10:09:12]time remaining to finish operation:GET_MICROSERVICE_SYSTEM_PROPERTIES on microservice:gateway:90 seconds (90000 milliseconds)
+[2018-09-20 10:09:12]successfully executed command:GET_MICROSERVICE_SYSTEM_PROPERTIES on microservice:gateway
+[2018-09-20 10:09:12]established servlet context path:/gateway
+[2018-09-20 10:09:12]start sending command:ECHO to microservice:gateway linked to address:localhost and port:20002 with timeout:30000
+[2018-09-20 10:09:12]time remaining to finish operation:ECHO on microservice:gateway:30 seconds (30000 milliseconds)
+[2018-09-20 10:09:12]successfully executed command:ECHO on microservice:gateway
+[2018-09-20 10:09:12]start sending command:START_REGISTERED_RESOURCES to microservice:gateway linked to address:localhost and port:20002 with timeout:90000
+[2018-09-20 10:09:12]time remaining to finish operation:START_REGISTERED_RESOURCES on microservice:gateway:90 seconds (90000 milliseconds)
+[2018-09-20 10:09:12]successfully executed command:START_REGISTERED_RESOURCES on microservice:gateway
+[2018-09-20 10:09:12]start sending command:ECHO to microservice:gateway linked to address:localhost and port:20002 with timeout:30000
+[2018-09-20 10:09:12]successfully executed command:ECHO on microservice:gateway
+[2018-09-20 10:09:12]start sending command:REDIRECT_SYSTEM_OUT_AND_ERR to microservice:gateway linked to address:localhost and port:20002 with timeout:90000
+[2018-09-20 10:09:12]time remaining to finish operation:REDIRECT_SYSTEM_OUT_AND_ERR on microservice:gateway:90 seconds (90000 milliseconds)
+[2018-09-20 10:09:12]output line from microservice:gateway during executing command:REDIRECT_SYSTEM_OUT_AND_ERR:System.out and System.err was redirect to:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\logs\server\gateway\gateway_system_out_%g.log
+[2018-09-20 10:09:12]successfully executed command:REDIRECT_SYSTEM_OUT_AND_ERR on microservice:gateway
+[2018-09-20 10:09:12]start procedure 'startReadProcessStreams' for microservice:gateway
+[2018-09-20 10:09:12]stop procedure 'startReadProcessStreams' for microservice:gateway
+[2018-09-20 10:09:13]added configuration to process manager load balancer for process:gateway
+[2018-09-20 10:09:13]lock by type:MICROSERVICE_OS_PROCESS_MANIPULATION is unlock by operation:START
+[2018-09-20 10:09:13]lock by type:MICROSERVICE_HEALTH_CHECK is unlock by operation:START
+[2018-09-20 10:09:13]JMX manager started
+[2018-09-20 10:09:13]lock by type:TECHNICAL_PROCESS_HEALTH_CHECK is lock by operation:SELF_START
+[2018-09-20 10:09:13]lock by type:TECHNICAL_OS_PROCESS_MANIPULATION is lock by operation:SELF_START
+[2018-09-20 10:09:13]found class executor to load technical process executor:NGINX - class com.jlupin.impl.manager.technicalprocess.executor.impl.nginx.JLupinNginxWindowsTechnicalProcessExecutorImpl
+[2018-09-20 10:09:14]nginx pid does not exists in file, and it seems it is not turn on, so let`s start them
+[2018-09-20 10:09:14]start executing NGINX command:start for:WINDOWS
+[2018-09-20 10:09:19]process output after executing NGINX command:start for:WINDOWS is null
+[2018-09-20 10:09:20]nginx was started correctly
+[2018-09-20 10:09:20]lock by type:TECHNICAL_OS_PROCESS_MANIPULATION is unlock by operation:SELF_START
+[2018-09-20 10:09:20]lock by type:TECHNICAL_PROCESS_HEALTH_CHECK is unlock by operation:SELF_START
+[2018-09-20 10:09:20] 
+ --------------------------------------------------------------
+|RUNNING TECHNICAL PROCESSES:                                 |
+ --------------------------------------------------------------
+
+ --------------------------------------------------------------
+|TECHNICAL PROCESS SUMMARY:                                   |
+ --------------------------------------------------------------
+|NAME:NGINX                                                   |
+ --------------------------------------------------------------
+|PID:10780                                                    |
+ --------------------------------------------------------------
+
+[2018-09-20 10:09:20]
+ --------------------------------------------------------------
+|RUNNING MICROSERVICES:                                       |
+ --------------------------------------------------------------
+
+ --------------------------------------------------------------
+|MICROSERVICE SUMMARY:                                        |
+ --------------------------------------------------------------
+|MICROSERVICE NAME:gateway                                    |
+ --------------------------------------------------------------
+|TYPE:SERVLET                                                 |
+ --------------------------------------------------------------
+|SERVICE PORT TYPE:HTTP  - PORT:20000                         |
+ --------------------------------------------------------------
+|TRANSMISSION PORT:20002                                      |
+ --------------------------------------------------------------
+|PROCESS ID:2828                                              |
+ --------------------------------------------------------------
+
+ --------------------------------------------------------------
+|MICROSERVICE SUMMARY:                                        |
+ --------------------------------------------------------------
+|MICROSERVICE NAME:order                                      |
+ --------------------------------------------------------------
+|TYPE:NATIVE                                                  |
+ --------------------------------------------------------------
+|SERVICE PORT TYPE:JLRMC - PORT:20014                         |
+ --------------------------------------------------------------
+|QUEUE PORT:20016                                             |
+ --------------------------------------------------------------
+|TRANSMISSION PORT:20018                                      |
+ --------------------------------------------------------------
+|PROCESS ID:15372                                             |
+ --------------------------------------------------------------
+
+ --------------------------------------------------------------
+|MICROSERVICE SUMMARY:                                        |
+ --------------------------------------------------------------
+|MICROSERVICE NAME:customer                                   |
+ --------------------------------------------------------------
+|TYPE:NATIVE                                                  |
+ --------------------------------------------------------------
+|SERVICE PORT TYPE:JLRMC - PORT:20006                         |
+ --------------------------------------------------------------
+|QUEUE PORT:20008                                             |
+ --------------------------------------------------------------
+|TRANSMISSION PORT:20010                                      |
+ --------------------------------------------------------------
+|PROCESS ID:11184                                             |
+ --------------------------------------------------------------
+
+
+[2018-09-20 10:09:20] 
+ --------------------------------------------------------------
+|RUNNING SERVERS SUMMARY                                       |
+ --------------------------------------------------------------
+|NAME                                          |PORT           |
+ --------------------------------------------------------------
+|JLRMC                                         |9090           |
+ --------------------------------------------------------------
+|ELASTIC_HTTP                                  |8082           |
+ --------------------------------------------------------------
+|QUEUE                                         |9095           |
+ --------------------------------------------------------------
+|TRANSMISSION                                  |9096           |
+ --------------------------------------------------------------
+|INFORMATION                                   |9097           |
+ --------------------------------------------------------------
+|INFORMATION_HTTP                              |9098           |
+ --------------------------------------------------------------
+
+[2018-09-20 10:09:20]JLupin Platform initialized correctly in:46269 milliseconds, process id:15004
+[2018-09-20 10:23:33]
+
+       _ _                 _         _____  _       _    __                     
+      | | |               (_)       |  __ \| |     | |  / _|                    
+      | | |    _   _ _ __  _ _ __   | |__) | | __ _| |_| |_ ___  _ __ _ __ ___  
+  _   | | |   | | | | '_ \| | '_ \  |  ___/| |/ _` | __|  _/ _ \| '__| '_ ` _ \ 
+ | |__| | |___| |_| | |_) | | | | | | |    | | (_| | |_| || (_) | |  | | | | | |
+  \____/|______\__,_| .__/|_|_| |_| |_|    |_|\__,_|\__|_| \___/|_|  |_| |_| |_|
+                    | |                                                         
+                    |_|                                                         
+
+
+[2018-09-20 10:23:33]
+
+  __   _____  ___          _____                           
+ /_ | | ____|/ _ \        / ____|                          
+  | | | |__ | | | |______| |    _   _ _ __  _ __ _   _ ___ 
+  | | |___ \| | | |______| |   | | | | '_ \| '__| | | / __|
+  | |_ ___) | |_| |      | |___| |_| | |_) | |  | |_| \__ \
+  |_(_)____(_)___/        \_____\__, | .__/|_|   \__,_|___/
+                                 __/ | |                   
+                                |___/|_|                   
+
+
+[2018-09-20 10:23:33]name:JLupin Platform Enterprise Edition
+[2018-09-20 10:23:33]code:CYPRUS
+[2018-09-20 10:23:33]version:1.5.0.2-ee
+[2018-09-20 10:23:33]commit no:a6640236
+
+[2018-09-20 10:23:33]initializing main server
+[2018-09-20 10:23:35]starting event log manager
+[2018-09-20 10:23:35]event log manager started correctly
+[2018-09-20 10:23:37]com.jlupin.command.interpreter.text.exception.JLupinTextCommandInterpreterException: an error occurred during executing serverStart all application on serverStart microservice caused by:
+[2018-09-20 10:23:37]	at com.jlupin.command.interpreter.text.main.JLupinMainServerTextCommandInterpreter.doCommand(JLupinMainServerTextCommandInterpreter.java:44)
+[2018-09-20 10:23:37]	at com.jlupin.starter.main.start.JLupinMainServerStarter.start(JLupinMainServerStarter.java:90)
+[2018-09-20 10:23:37]	at com.jlupin.starter.main.init.JLupinMainServerInitializer.main(JLupinMainServerInitializer.java:49)
+[2018-09-20 10:23:37]Caused by: com.jlupin.command.interpreter.bytes.exception.JLupinByteCommandInterpreterException: an exception occurred during starting all servers and microservices microservice procedure caused by:
+[2018-09-20 10:23:37]	at com.jlupin.command.interpreter.bytes.main.JLupinMainServerByteCommandInterpreter.doCommand(JLupinMainServerByteCommandInterpreter.java:70)
+[2018-09-20 10:23:37]	at com.jlupin.command.interpreter.text.main.JLupinMainServerTextCommandInterpreter.doCommand(JLupinMainServerTextCommandInterpreter.java:40)
+[2018-09-20 10:23:37]	... 2 more
+[2018-09-20 10:23:37]Caused by: com.jlupin.command.executor.exception.JLupinCommandExecutorException: an unexpected error occurred during initialize and start main servers caused by:
+[2018-09-20 10:23:37]	at com.jlupin.command.executor.main.JLupinMainServerCommandExecutor.startServersAndAllMicroservicesOnStartProcess(JLupinMainServerCommandExecutor.java:142)
+[2018-09-20 10:23:37]	at com.jlupin.command.interpreter.bytes.main.JLupinMainServerByteCommandInterpreter.doCommand(JLupinMainServerByteCommandInterpreter.java:67)
+[2018-09-20 10:23:37]	... 3 more
+[2018-09-20 10:23:37]Caused by: com.jlupin.command.executor.main.loadstrategy.manager.exception.JLupinMainServerLoadStrategyManagerException: an error occurred during start single main server listen on port:9096 caused by:
+[2018-09-20 10:23:37]	at com.jlupin.command.executor.main.loadstrategy.manager.JLupinMainServerLoadStrategyManager.loadAndStartConfiguration(JLupinMainServerLoadStrategyManager.java:142)
+[2018-09-20 10:23:37]	at com.jlupin.command.executor.main.JLupinMainServerCommandExecutor.startServersAndAllMicroservicesOnStartProcess(JLupinMainServerCommandExecutor.java:126)
+[2018-09-20 10:23:37]	... 4 more
+[2018-09-20 10:23:37]Caused by: com.jlupin.interfaces.server.exception.JLupinServerException: an unexpected error occurred during starting server:TRANSMISSION on port:9096 caused by:
+[2018-09-20 10:23:37]	at com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl.start(JLupinNativeDefaultServerImpl.java:175)
+[2018-09-20 10:23:37]	at com.jlupin.command.executor.main.loadstrategy.manager.JLupinMainServerLoadStrategyManager.loadAndStartConfiguration(JLupinMainServerLoadStrategyManager.java:140)
+[2018-09-20 10:23:37]	... 5 more
+[2018-09-20 10:23:37]Caused by: com.jlupin.impl.server.jnative.defaults.factory.socket.exception.JLupinServerSocketFactoryException: an unexpected error occurred during creating server socket on port:9096 caused by:
+[2018-09-20 10:23:37]	at com.jlupin.impl.server.jnative.defaults.factory.socket.ssl.JLupinSSLServerSocketFactoryImpl.produceServerSocket(JLupinSSLServerSocketFactoryImpl.java:62)
+[2018-09-20 10:23:37]	at com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl.start(JLupinNativeDefaultServerImpl.java:152)
+[2018-09-20 10:23:37]	... 6 more
+[2018-09-20 10:23:37]Caused by: com.jlupin.impl.util.security.exception.JLupinSecurityUtilException: an error occurred during generating two way authentication ssl server socket factory caused by:
+[2018-09-20 10:23:37]	at com.jlupin.impl.util.security.JLupinSecurityUtil.getTwoWayAuthenticationSSLServerSocketFactory(JLupinSecurityUtil.java:397)
+[2018-09-20 10:23:37]	at com.jlupin.impl.server.jnative.defaults.factory.socket.ssl.JLupinSSLServerSocketFactoryImpl.produceServerSocket(JLupinSSLServerSocketFactoryImpl.java:35)
+[2018-09-20 10:23:37]	... 7 more
+[2018-09-20 10:23:37]Caused by: com.jlupin.impl.util.security.exception.JLupinSecurityUtilException: an error occurred during generating 509 certificate caused by:
+[2018-09-20 10:23:37]	at com.jlupin.impl.util.security.JLupinSecurityUtil.generateX509Certificate(JLupinSecurityUtil.java:437)
+[2018-09-20 10:23:37]	at com.jlupin.impl.util.security.JLupinSecurityUtil.getTwoWayAuthenticationSSLServerSocketFactory(JLupinSecurityUtil.java:345)
+[2018-09-20 10:23:37]	... 8 more
+[2018-09-20 10:23:37]Caused by: java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter
+[2018-09-20 10:23:37]	at com.jlupin.impl.util.security.JLupinSecurityUtil.parsePemFileAndExtractSection(JLupinSecurityUtil.java:412)
+[2018-09-20 10:23:37]	at com.jlupin.impl.util.security.JLupinSecurityUtil.generateX509Certificate(JLupinSecurityUtil.java:432)
+[2018-09-20 10:23:37]	... 9 more
+[2018-09-20 10:23:37]Caused by: java.lang.ClassNotFoundException: javax.xml.bind.DatatypeConverter
+[2018-09-20 10:23:37]	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+[2018-09-20 10:23:37]	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+[2018-09-20 10:23:37]	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+[2018-09-20 10:23:37]	... 11 more
+[2018-09-20 10:23:37]!ERROR server did not initialized correctly
+[2018-09-20 10:23:37]information log files for local processes - especially error directory if local microservice had response timeout
+[2018-09-20 10:23:37]information log files for main server
+[2018-09-20 10:23:37]all locks was released
+[2018-09-20 10:23:37]start quit force...
+[2018-09-20 10:23:37]stopping event log manager
+[2018-09-20 10:23:37]event log manager stopped correctly
+[2018-09-20 10:23:37]all locks was released
+[2018-09-20 10:23:37]stop force all processes...
+[2018-09-20 10:23:37]all microservices closed force
+[2018-09-20 10:23:37]command 'quit force' has been executed correctly
+[2018-09-20 10:26:17]
+
+       _ _                 _         _____  _       _    __                     
+      | | |               (_)       |  __ \| |     | |  / _|                    
+      | | |    _   _ _ __  _ _ __   | |__) | | __ _| |_| |_ ___  _ __ _ __ ___  
+  _   | | |   | | | | '_ \| | '_ \  |  ___/| |/ _` | __|  _/ _ \| '__| '_ ` _ \ 
+ | |__| | |___| |_| | |_) | | | | | | |    | | (_| | |_| || (_) | |  | | | | | |
+  \____/|______\__,_| .__/|_|_| |_| |_|    |_|\__,_|\__|_| \___/|_|  |_| |_| |_|
+                    | |                                                         
+                    |_|                                                         
+
+
+[2018-09-20 10:26:17]
+
+  __   _____  ___          _____                           
+ /_ | | ____|/ _ \        / ____|                          
+  | | | |__ | | | |______| |    _   _ _ __  _ __ _   _ ___ 
+  | | |___ \| | | |______| |   | | | | '_ \| '__| | | / __|
+  | |_ ___) | |_| |      | |___| |_| | |_) | |  | |_| \__ \
+  |_(_)____(_)___/        \_____\__, | .__/|_|   \__,_|___/
+                                 __/ | |                   
+                                |___/|_|                   
+
+
+[2018-09-20 10:26:17]name:JLupin Platform Enterprise Edition
+[2018-09-20 10:26:17]code:CYPRUS
+[2018-09-20 10:26:17]version:1.5.0.2-ee
+[2018-09-20 10:26:17]commit no:a6640236
+
+[2018-09-20 10:26:17]initializing main server
+[2018-09-20 10:26:20]starting event log manager
+[2018-09-20 10:26:20]event log manager started correctly
+[2018-09-20 10:26:22]configuring new microservice:gateway with ports amount:6
+[2018-09-20 10:26:22]available ports for microservice:gateway:[20000, 20001, 20002, 20003, 20004, 20005]
+[2018-09-20 10:26:22]configuring new microservice:customer with ports amount:8
+[2018-09-20 10:26:23]available ports for microservice:customer:[20006, 20007, 20008, 20009, 20010, 20011, 20012, 20013]
+[2018-09-20 10:26:23]configuring new microservice:order with ports amount:8
+[2018-09-20 10:26:23]available ports for microservice:order:[20014, 20015, 20016, 20017, 20018, 20019, 20020, 20021]
+[2018-09-20 10:26:23]microservices start in order:[order, customer, gateway]
+[2018-09-20 10:26:23]lock by type:MICROSERVICE_HEALTH_CHECK is lock by operation:START
+[2018-09-20 10:26:23]lock by type:MICROSERVICE_OS_PROCESS_MANIPULATION is lock by operation:START
+[2018-09-20 10:26:23]start not running processes in parallel mode:false
+[2018-09-20 10:26:23]microservice:order is new, try start them...
+[2018-09-20 10:26:23]isArchive flag is set to false
+[2018-09-20 10:26:23]already used memory for all running microservices is:0 (0 bytes)
+[2018-09-20 10:26:23]this microservice requires in bytes:268435456(256.0 megabytes)
+[2018-09-20 10:26:23]successfully increased used memory for all microservices and now is:268435456 (256.0 megabytes)
+[2018-09-20 10:26:23]init os process for microservice:order
+[2018-09-20 10:26:23]start sending command:ECHO to microservice:order linked to address:localhost and port:20018 with timeout:30000
+[2018-09-20 10:26:23]time remaining to finish operation:ECHO on microservice:order:30 seconds (30000 milliseconds)
+[2018-09-20 10:26:24]copying microservice:order files to temp classpath:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\start\temp\temp_order\temp_1537431982272
+[2018-09-20 10:26:24]now main microservice is waiting:90000 milliseconds for each microservice input stream (standard, error) to initialize microservice microservice:order by operating system
+[2018-09-20 10:26:27]init new microservice for microservice:order is executing now and takes so far:4 seconds (4295 milliseconds)
+[2018-09-20 10:26:30]init new microservice for microservice:order is executing now and takes so far:6 seconds (6788 milliseconds)
+[2018-09-20 10:26:30]microservice:order returns init microservice information:
+found APPLICATION section in configuration file and try create JLupinApplicationContainer by producer class:pl.koziolekweb.cnet.configuration.OrderJLupinConfiguration
+produced with success JLupinApplicationContainer:pl.koziolekweb.cnet.configuration.OrderJLupinConfiguration$1
+microservice:order identity by os microservice id:4028 started correctly
+memory state for local server after start microservice:
+total memory:128.0 megabytes
+free  memory:62.5  megabytes
+used  memory:65.5  megabytes
+max   memory:256.0 megabytes
+microservice identity by os microservice id:4028 for microservice:order initialized correctly
+[JLPIT]-[PROCESS_ID]4028[/PROCESS_ID]-[/JLPIT]
+[JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-09-20 10:26:30]start sending command:ECHO to microservice:order linked to address:localhost and port:20018 with timeout:30000
+[2018-09-20 10:26:30]time remaining to finish operation:ECHO on microservice:order:30 seconds (30000 milliseconds)
+[2018-09-20 10:26:30]successfully executed command:ECHO on microservice:order
+[2018-09-20 10:26:30]start sending command:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER to microservice:order linked to address:localhost and port:20018 with timeout:90000
+[2018-09-20 10:26:30]time remaining to finish operation:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER on microservice:order:90 seconds (90000 milliseconds)
+[2018-09-20 10:26:30]successfully executed command:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER on microservice:order
+[2018-09-20 10:26:30]start sending command:ECHO to microservice:order linked to address:localhost and port:20018 with timeout:30000
+[2018-09-20 10:26:30]successfully executed command:ECHO on microservice:order
+[2018-09-20 10:26:30]time remaining to finish operation:ECHO on microservice:order:30 seconds (30000 milliseconds)
+[2018-09-20 10:26:30]start sending command:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER to microservice:order linked to address:localhost and port:20018 with timeout:90000
+[2018-09-20 10:26:30]time remaining to finish operation:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER on microservice:order:90 seconds (90000 milliseconds)
+[2018-09-20 10:26:30]successfully executed command:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER on microservice:order
+[2018-09-20 10:26:30]start sending command:ADD_ADDTIONAL_INFORMATION_TO_MICROSERVICE_CONFIGURATION_FROM_MAIN_SERVER to microservice:order linked to address:localhost and port:20018 with timeout:90000
+[2018-09-20 10:26:30]time remaining to finish operation:ADD_ADDTIONAL_INFORMATION_TO_MICROSERVICE_CONFIGURATION_FROM_MAIN_SERVER on microservice:order:90 seconds (90000 milliseconds)
+[2018-09-20 10:26:30]successfully executed command:ADD_ADDTIONAL_INFORMATION_TO_MICROSERVICE_CONFIGURATION_FROM_MAIN_SERVER on microservice:order
+[2018-09-20 10:26:30]start sending command:ECHO to microservice:order linked to address:localhost and port:20018 with timeout:30000
+[2018-09-20 10:26:30]successfully executed command:ECHO on microservice:order
+[2018-09-20 10:26:30]start sending command:START_SERVERS to microservice:order linked to address:localhost and port:20018 with timeout:90000
+[2018-09-20 10:26:30]time remaining to finish operation:ECHO on microservice:order:30 seconds (30000 milliseconds)
+[2018-09-20 10:26:30]time remaining to finish operation:START_SERVERS on microservice:order:90 seconds (90000 milliseconds)
+[2018-09-20 10:26:30]output line from microservice:order during executing command:START_SERVERS:user.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\application\order
+[2018-09-20 10:26:30]output line from microservice:order during executing command:START_SERVERS:temp.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\start\temp
+[2018-09-20 10:26:30]output line from microservice:order during executing command:START_SERVERS:all microservers for microservice:order started correctly
+[2018-09-20 10:26:30]output line from microservice:order during executing command:START_SERVERS:servers are starting now and this operation takes so far:0 seconds (15 milliseconds)
+[2018-09-20 10:26:30]successfully executed command:START_SERVERS on microservice:order
+[2018-09-20 10:26:30]start sending command:ECHO to microservice:order linked to address:localhost and port:20018 with timeout:30000
+[2018-09-20 10:26:30]time remaining to finish operation:ECHO on microservice:order:30 seconds (30000 milliseconds)
+[2018-09-20 10:26:30]successfully executed command:ECHO on microservice:order
+[2018-09-20 10:26:30]start sending command:START_APPLICATION_CONTAINER to microservice:order linked to address:localhost and port:20018 with timeout:90000
+[2018-09-20 10:26:30]time remaining to finish operation:START_APPLICATION_CONTAINER on microservice:order:90 seconds (90000 milliseconds)
+[2018-09-20 10:26:32]output line from microservice:order during executing command:START_APPLICATION_CONTAINER:remote service names:[createOrderService, searchOrderService]
+[2018-09-20 10:26:32]output line from microservice:order during executing command:START_APPLICATION_CONTAINER:application container is loading now and this operation takes so far:2 seconds (2266 milliseconds)
+[2018-09-20 10:26:32]output line from microservice:order during executing command:START_APPLICATION_CONTAINER:application container for:order started correctly
+[2018-09-20 10:26:32]output line from microservice:order during executing command:START_APPLICATION_CONTAINER:System.out and System.err was redirect to:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\logs\server\order\order_system_out_%g.log
+[2018-09-20 10:26:32]successfully executed command:START_APPLICATION_CONTAINER on microservice:order
+[2018-09-20 10:26:32]start sending command:ECHO to microservice:order linked to address:localhost and port:20018 with timeout:30000
+[2018-09-20 10:26:32]time remaining to finish operation:ECHO on microservice:order:30 seconds (30000 milliseconds)
+[2018-09-20 10:26:32]successfully executed command:ECHO on microservice:order
+[2018-09-20 10:26:32]start sending command:START_REGISTERED_RESOURCES to microservice:order linked to address:localhost and port:20018 with timeout:90000
+[2018-09-20 10:26:32]time remaining to finish operation:START_REGISTERED_RESOURCES on microservice:order:90 seconds (90000 milliseconds)
+[2018-09-20 10:26:33]successfully executed command:START_REGISTERED_RESOURCES on microservice:order
+[2018-09-20 10:26:33]start procedure 'startReadProcessStreams' for microservice:order
+[2018-09-20 10:26:33]stop procedure 'startReadProcessStreams' for microservice:order
+[2018-09-20 10:26:33]added configuration to process manager load balancer for process:order
+[2018-09-20 10:26:33]microservice:customer is new, try start them...
+[2018-09-20 10:26:33]isArchive flag is set to false
+[2018-09-20 10:26:33]already used memory for all running microservices is:268435456 (256.0 megabytes)
+[2018-09-20 10:26:33]this microservice requires in bytes:268435456(256.0 megabytes)
+[2018-09-20 10:26:33]successfully increased used memory for all microservices and now is:536870912 (512.0 megabytes)
+[2018-09-20 10:26:33]init os process for microservice:customer
+[2018-09-20 10:26:33]start sending command:ECHO to microservice:customer linked to address:localhost and port:20010 with timeout:30000
+[2018-09-20 10:26:33]time remaining to finish operation:ECHO on microservice:customer:30 seconds (30000 milliseconds)
+[2018-09-20 10:26:34]copying microservice:customer files to temp classpath:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\start\temp\temp_customer\temp_1537431982073
+[2018-09-20 10:26:35]now main microservice is waiting:90000 milliseconds for each microservice input stream (standard, error) to initialize microservice microservice:customer by operating system
+[2018-09-20 10:26:37]init new microservice for microservice:customer is executing now and takes so far:4 seconds (4355 milliseconds)
+[2018-09-20 10:26:40]init new microservice for microservice:customer is executing now and takes so far:7 seconds (7110 milliseconds)
+[2018-09-20 10:26:40]microservice:customer returns init microservice information:
+found APPLICATION section in configuration file and try create JLupinApplicationContainer by producer class:pl.koziolekweb.cnet.configuration.CustomerJLupinConfiguration
+produced with success JLupinApplicationContainer:pl.koziolekweb.cnet.configuration.CustomerJLupinConfiguration$1
+microservice:customer identity by os microservice id:3512 started correctly
+memory state for local server after start microservice:
+total memory:134.0 megabytes
+free  memory:41.2  megabytes
+used  memory:92.8  megabytes
+max   memory:256.0 megabytes
+microservice identity by os microservice id:3512 for microservice:customer initialized correctly
+[JLPIT]-[PROCESS_ID]3512[/PROCESS_ID]-[/JLPIT]
+[JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-09-20 10:26:40]start sending command:ECHO to microservice:customer linked to address:localhost and port:20010 with timeout:30000
+[2018-09-20 10:26:40]time remaining to finish operation:ECHO on microservice:customer:30 seconds (30000 milliseconds)
+[2018-09-20 10:26:40]successfully executed command:ECHO on microservice:customer
+[2018-09-20 10:26:40]start sending command:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER to microservice:customer linked to address:localhost and port:20010 with timeout:90000
+[2018-09-20 10:26:40]time remaining to finish operation:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER on microservice:customer:90 seconds (90000 milliseconds)
+[2018-09-20 10:26:40]successfully executed command:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER on microservice:customer
+[2018-09-20 10:26:40]start sending command:ECHO to microservice:customer linked to address:localhost and port:20010 with timeout:30000
+[2018-09-20 10:26:40]time remaining to finish operation:ECHO on microservice:customer:30 seconds (30000 milliseconds)
+[2018-09-20 10:26:40]successfully executed command:ECHO on microservice:customer
+[2018-09-20 10:26:40]start sending command:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER to microservice:customer linked to address:localhost and port:20010 with timeout:90000
+[2018-09-20 10:26:40]time remaining to finish operation:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER on microservice:customer:90 seconds (90000 milliseconds)
+[2018-09-20 10:26:40]successfully executed command:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER on microservice:customer
+[2018-09-20 10:26:40]start sending command:ADD_ADDTIONAL_INFORMATION_TO_MICROSERVICE_CONFIGURATION_FROM_MAIN_SERVER to microservice:customer linked to address:localhost and port:20010 with timeout:90000
+[2018-09-20 10:26:40]time remaining to finish operation:ADD_ADDTIONAL_INFORMATION_TO_MICROSERVICE_CONFIGURATION_FROM_MAIN_SERVER on microservice:customer:90 seconds (90000 milliseconds)
+[2018-09-20 10:26:40]successfully executed command:ADD_ADDTIONAL_INFORMATION_TO_MICROSERVICE_CONFIGURATION_FROM_MAIN_SERVER on microservice:customer
+[2018-09-20 10:26:40]start sending command:ECHO to microservice:customer linked to address:localhost and port:20010 with timeout:30000
+[2018-09-20 10:26:40]time remaining to finish operation:ECHO on microservice:customer:30 seconds (30000 milliseconds)
+[2018-09-20 10:26:40]successfully executed command:ECHO on microservice:customer
+[2018-09-20 10:26:40]start sending command:START_SERVERS to microservice:customer linked to address:localhost and port:20010 with timeout:90000
+[2018-09-20 10:26:40]time remaining to finish operation:START_SERVERS on microservice:customer:90 seconds (90000 milliseconds)
+[2018-09-20 10:26:40]output line from microservice:customer during executing command:START_SERVERS:user.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\application\customer
+[2018-09-20 10:26:40]output line from microservice:customer during executing command:START_SERVERS:temp.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\start\temp
+[2018-09-20 10:26:40]output line from microservice:customer during executing command:START_SERVERS:all microservers for microservice:customer started correctly
+[2018-09-20 10:26:40]output line from microservice:customer during executing command:START_SERVERS:servers are starting now and this operation takes so far:0 seconds (17 milliseconds)
+[2018-09-20 10:26:40]successfully executed command:START_SERVERS on microservice:customer
+[2018-09-20 10:26:40]start sending command:ECHO to microservice:customer linked to address:localhost and port:20010 with timeout:30000
+[2018-09-20 10:26:40]time remaining to finish operation:ECHO on microservice:customer:30 seconds (30000 milliseconds)
+[2018-09-20 10:26:40]successfully executed command:ECHO on microservice:customer
+[2018-09-20 10:26:40]start sending command:START_APPLICATION_CONTAINER to microservice:customer linked to address:localhost and port:20010 with timeout:90000
+[2018-09-20 10:26:40]time remaining to finish operation:START_APPLICATION_CONTAINER on microservice:customer:90 seconds (90000 milliseconds)
+[2018-09-20 10:26:42]output line from microservice:customer during executing command:START_APPLICATION_CONTAINER:remote service names:[searchCustomerService, createCustomerService]
+[2018-09-20 10:26:42]output line from microservice:customer during executing command:START_APPLICATION_CONTAINER:application container is loading now and this operation takes so far:1 seconds (1983 milliseconds)
+[2018-09-20 10:26:42]output line from microservice:customer during executing command:START_APPLICATION_CONTAINER:application container for:customer started correctly
+[2018-09-20 10:26:42]output line from microservice:customer during executing command:START_APPLICATION_CONTAINER:System.out and System.err was redirect to:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\logs\server\customer\customer_system_out_%g.log
+[2018-09-20 10:26:42]successfully executed command:START_APPLICATION_CONTAINER on microservice:customer
+[2018-09-20 10:26:42]start sending command:ECHO to microservice:customer linked to address:localhost and port:20010 with timeout:30000
+[2018-09-20 10:26:42]time remaining to finish operation:ECHO on microservice:customer:30 seconds (30000 milliseconds)
+[2018-09-20 10:26:42]successfully executed command:ECHO on microservice:customer
+[2018-09-20 10:26:42]start sending command:START_REGISTERED_RESOURCES to microservice:customer linked to address:localhost and port:20010 with timeout:90000
+[2018-09-20 10:26:42]time remaining to finish operation:START_REGISTERED_RESOURCES on microservice:customer:90 seconds (90000 milliseconds)
+[2018-09-20 10:26:42]successfully executed command:START_REGISTERED_RESOURCES on microservice:customer
+[2018-09-20 10:26:42]start procedure 'startReadProcessStreams' for microservice:customer
+[2018-09-20 10:26:42]stop procedure 'startReadProcessStreams' for microservice:customer
+[2018-09-20 10:26:43]added configuration to process manager load balancer for process:customer
+[2018-09-20 10:26:43]microservice:gateway is new, try start them...
+[2018-09-20 10:26:43]isArchive flag is set to false
+[2018-09-20 10:26:43]already used memory for all running microservices is:536870912 (512.0 megabytes)
+[2018-09-20 10:26:43]this microservice requires in bytes:536870912(512.0 megabytes)
+[2018-09-20 10:26:43]successfully increased used memory for all microservices and now is:1073741824 (1024.0 megabytes)
+[2018-09-20 10:26:43]init os process for microservice:gateway
+[2018-09-20 10:26:43]start sending command:ECHO to microservice:gateway linked to address:localhost and port:20002 with timeout:30000
+[2018-09-20 10:26:43]time remaining to finish operation:ECHO on microservice:gateway:30 seconds (30000 milliseconds)
+[2018-09-20 10:26:44]copying microservice:gateway files to temp classpath:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\start\temp\temp_gateway\temp_1537431982247
+[2018-09-20 10:26:44]adding to classpath microservice:gateway files from temp classpath:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\start\temp\temp_gateway\temp_1537431982247
+[2018-09-20 10:26:44]now main microservice is waiting:90000 milliseconds for each microservice input stream (standard, error) to initialize microservice microservice:gateway by operating system
+[2018-09-20 10:26:47]init new microservice for microservice:gateway is executing now and takes so far:4 seconds (4421 milliseconds)
+[2018-09-20 10:26:49]init new microservice for microservice:gateway is executing now and takes so far:5 seconds (5979 milliseconds)
+[2018-09-20 10:26:49]microservice:gateway returns init microservice information:
+microservice:gateway identity by os microservice id:3416 started correctly
+memory state for local server after start microservice:
+total memory:183.0 megabytes
+free  memory:75.3  megabytes
+used  memory:107.7 megabytes
+max   memory:512.0 megabytes
+microservice identity by os microservice id:3416 for microservice:gateway initialized correctly
+[JLPIT]-[PROCESS_ID]3416[/PROCESS_ID]-[/JLPIT]
+[JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-09-20 10:26:49]start sending command:ECHO to microservice:gateway linked to address:localhost and port:20002 with timeout:30000
+[2018-09-20 10:26:49]time remaining to finish operation:ECHO on microservice:gateway:30 seconds (30000 milliseconds)
+[2018-09-20 10:26:49]successfully executed command:ECHO on microservice:gateway
+[2018-09-20 10:26:49]start sending command:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER to microservice:gateway linked to address:localhost and port:20002 with timeout:90000
+[2018-09-20 10:26:49]time remaining to finish operation:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER on microservice:gateway:90 seconds (90000 milliseconds)
+[2018-09-20 10:26:49]successfully executed command:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER on microservice:gateway
+[2018-09-20 10:26:49]start sending command:ECHO to microservice:gateway linked to address:localhost and port:20002 with timeout:30000
+[2018-09-20 10:26:49]time remaining to finish operation:ECHO on microservice:gateway:30 seconds (30000 milliseconds)
+[2018-09-20 10:26:49]successfully executed command:ECHO on microservice:gateway
+[2018-09-20 10:26:49]start sending command:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER to microservice:gateway linked to address:localhost and port:20002 with timeout:90000
+[2018-09-20 10:26:49]time remaining to finish operation:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER on microservice:gateway:90 seconds (90000 milliseconds)
+[2018-09-20 10:26:49]successfully executed command:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER on microservice:gateway
+[2018-09-20 10:26:49]start sending command:ECHO to microservice:gateway linked to address:localhost and port:20002 with timeout:30000
+[2018-09-20 10:26:49]time remaining to finish operation:ECHO on microservice:gateway:30 seconds (30000 milliseconds)
+[2018-09-20 10:26:49]successfully executed command:ECHO on microservice:gateway
+[2018-09-20 10:26:49]start sending command:START_SERVERS to microservice:gateway linked to address:localhost and port:20002 with timeout:90000
+[2018-09-20 10:26:49]time remaining to finish operation:START_SERVERS on microservice:gateway:90 seconds (90000 milliseconds)
+[2018-09-20 10:26:49]output line from microservice:gateway during executing command:START_SERVERS:user.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\application\gateway
+[2018-09-20 10:26:49]output line from microservice:gateway during executing command:START_SERVERS:temp.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\start\temp
+[2018-09-20 10:26:50]output line from microservice:gateway during executing command:START_SERVERS:
+[2018-09-20 10:26:50]output line from microservice:gateway during executing command:START_SERVERS:  .   ____          _            __ _ _
+[2018-09-20 10:26:50]output line from microservice:gateway during executing command:START_SERVERS: /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+[2018-09-20 10:26:50]output line from microservice:gateway during executing command:START_SERVERS:( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+[2018-09-20 10:26:50]output line from microservice:gateway during executing command:START_SERVERS: \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+[2018-09-20 10:26:50]output line from microservice:gateway during executing command:START_SERVERS:  '  |____| .__|_| |_|_| |_\__, | / / / /
+[2018-09-20 10:26:50]output line from microservice:gateway during executing command:START_SERVERS: =========|_|==============|___/=/_/_/_/
+[2018-09-20 10:26:50]output line from microservice:gateway during executing command:START_SERVERS: :: Spring Boot ::        (v2.0.2.RELEASE)
+[2018-09-20 10:26:50]output line from microservice:gateway during executing command:START_SERVERS:
+[2018-09-20 10:26:54]output line from microservice:gateway during executing command:START_SERVERS:servers are starting now and this operation takes so far:5 seconds (5242 milliseconds)
+[2018-09-20 10:26:54]output line from microservice:gateway during executing command:START_SERVERS:bad log file exists try delete them:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\application\logs
+[2018-09-20 10:26:54]try destroy microservice for microservice name:gateway because microservice not started correctly, repair microservice and try start again
+[2018-09-20 10:26:54]process for microservice name:gateway is not null and its described by:Process[pid=3416, exitValue="not exited"], process id:3416
+[2018-09-20 10:26:54]try forcible destroy process for microservice:gateway
+[2018-09-20 10:26:54]process for microservice:gateway properly destroyed
+[2018-09-20 10:26:54]microservice:gateway not started correctly, caused by:
+[2018-09-20 10:26:54]com.jlupin.impl.manager.microserviceprocess.helper.process.exception.JLupinProcessHelperException: an error occurred during command executing for microservice:gateway caused by:
+[2018-09-20 10:26:54]	at com.jlupin.impl.manager.microserviceprocess.helper.process.JLupinProcessHelper.initOSProcessAsMicroserviceAndDoOtherSequenceOperation(JLupinProcessHelper.java:145)
+[2018-09-20 10:26:54]	at com.jlupin.impl.manager.microserviceprocess.impl.base.JLupinBaseMicroserviceProcessManagerImpl.initOSProcessesAsMicroserviceAndDoOtherSequenceOperationByNamesInternal(JLupinBaseMicroserviceProcessManagerImpl.java:936)
+[2018-09-20 10:26:54]	at com.jlupin.impl.manager.microserviceprocess.impl.base.JLupinBaseMicroserviceProcessManagerImpl.startAllProcessesOnStartProcessInternal(JLupinBaseMicroserviceProcessManagerImpl.java:399)
+[2018-09-20 10:26:54]	at com.jlupin.impl.manager.microserviceprocess.impl.balancing.JLupinBalancingMicroserviceProcessManagerImpl.startAllProcessesOnStartProcess(JLupinBalancingMicroserviceProcessManagerImpl.java:123)
+[2018-09-20 10:26:54]	at com.jlupin.command.executor.main.loadstrategy.manager.JLupinMainServerLoadStrategyManager.loadAndStartConfiguration(JLupinMainServerLoadStrategyManager.java:147)
+[2018-09-20 10:26:54]	at com.jlupin.command.executor.main.JLupinMainServerCommandExecutor.startServersAndAllMicroservicesOnStartProcess(JLupinMainServerCommandExecutor.java:126)
+[2018-09-20 10:26:54]	at com.jlupin.command.interpreter.bytes.main.JLupinMainServerByteCommandInterpreter.doCommand(JLupinMainServerByteCommandInterpreter.java:67)
+[2018-09-20 10:26:54]	at com.jlupin.command.interpreter.text.main.JLupinMainServerTextCommandInterpreter.doCommand(JLupinMainServerTextCommandInterpreter.java:40)
+[2018-09-20 10:26:54]	at com.jlupin.starter.main.start.JLupinMainServerStarter.start(JLupinMainServerStarter.java:90)
+[2018-09-20 10:26:54]	at com.jlupin.starter.main.init.JLupinMainServerInitializer.main(JLupinMainServerInitializer.java:49)
+[2018-09-20 10:26:54]Caused by: com.jlupin.impl.manager.microserviceprocess.helper.process.exception.JLupinCommandExecutingException: an unexpected error occurred during executing command:START_SERVERS on microservice:gateway caused by:
+[2018-09-20 10:26:54]	at com.jlupin.impl.manager.microserviceprocess.helper.process.JLupinProcessHelper.handleException(JLupinProcessHelper.java:1205)
+[2018-09-20 10:26:54]	at com.jlupin.impl.manager.microserviceprocess.helper.process.JLupinProcessHelper.startServers(JLupinProcessHelper.java:673)
+[2018-09-20 10:26:54]	at com.jlupin.impl.manager.microserviceprocess.helper.process.JLupinProcessHelper.initOSProcessAsMicroserviceAndDoOtherSequenceOperation(JLupinProcessHelper.java:126)
+[2018-09-20 10:26:54]	... 9 more
+[2018-09-20 10:26:54]Caused by: com.jlupin.impl.manager.microserviceprocess.helper.process.exception.JLupinCommandExecutingException: an error occurred during executing command:START_SERVERS, remote exception details:com.jlupin.command.interpreter.bytes.exception.JLupinByteCommandInterpreterException: an exception occurred during executing:80 command caused by:
+	at com.jlupin.command.interpreter.bytes.microservice.JLupinMicroserviceByteCommandInterpreter.handleException(JLupinMicroserviceByteCommandInterpreter.java:191)
+	at com.jlupin.command.interpreter.bytes.microservice.JLupinMicroserviceByteCommandInterpreter.doCommand(JLupinMicroserviceByteCommandInterpreter.java:128)
+	at com.jlupin.command.interpreter.transmission.microservice.function.impl.JLupinMicroserviceTransmissionStartServersFunctionImpl.doCommand(JLupinMicroserviceTransmissionStartServersFunctionImpl.java:21)
+	at com.jlupin.command.interpreter.transmission.microservice.function.impl.JLupinMicroserviceTransmissionStartServersFunctionImpl.doCommand(JLupinMicroserviceTransmissionStartServersFunctionImpl.java:13)
+	at com.jlupin.command.interpreter.transmission.microservice.JLupinMicroserviceTransmissionCommandInterpreter.doCommand(JLupinMicroserviceTransmissionCommandInterpreter.java:63)
+	at com.jlupin.impl.entrypoint.microservice.transmission.JLupinTransmissionMicroserviceEntryPointImpl$1.executingInputAndGetOutputAsByteArrayWithPrintStreaming(JLupinTransmissionMicroserviceEntryPointImpl.java:35)
+	at com.jlupin.impl.util.communication.protocol.transmission.JLupinCommunicationTransmissionProtocolUtil.receivedAndSendObjectWithPrintStreamingByOpenedSocketWithItsClosing(JLupinCommunicationTransmissionProtocolUtil.java:54)
+	at com.jlupin.impl.entrypoint.microservice.transmission.JLupinTransmissionMicroserviceEntryPointImpl.doEntry(JLupinTransmissionMicroserviceEntryPointImpl.java:25)
+	at com.jlupin.impl.server.jnative.defaults.strategy.service.base.JLupinBaseAbstractServiceStrategy$ThreadCallable.call(JLupinBaseAbstractServiceStrategy.java:204)
+	at com.jlupin.impl.server.jnative.defaults.strategy.service.base.JLupinBaseAbstractServiceStrategy$ThreadCallable.call(JLupinBaseAbstractServiceStrategy.java:185)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: com.jlupin.command.executor.exception.JLupinCommandExecutorException: an error occurred during starting servers caused by:
+	at com.jlupin.command.executor.microservice.JLupinMicroserviceServerCommandExecutor.startServers(JLupinMicroserviceServerCommandExecutor.java:151)
+	at com.jlupin.command.interpreter.bytes.microservice.JLupinMicroserviceByteCommandInterpreter.doCommand(JLupinMicroserviceByteCommandInterpreter.java:125)
+	... 12 more
+Caused by: com.jlupin.interfaces.server.exception.JLupinServerException: an unexpected error occurred during starting spring boot caused by:
+	at com.jlupin.impl.server.servlet.springboot.JLupinServletSpringBootServerImpl.start(JLupinServletSpringBootServerImpl.java:121)
+	at com.jlupin.command.executor.microservice.JLupinMicroserviceServerCommandExecutor.startServers(JLupinMicroserviceServerCommandExecutor.java:131)
+	... 13 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50)
+	at org.springframework.boot.loader.WarLauncher.main(WarLauncher.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at com.jlupin.impl.util.JLupinUtil.invokeMethod(JLupinUtil.java:215)
+	at com.jlupin.impl.server.servlet.springboot.JLupinServletSpringBootServerImpl.start(JLupinServletSpringBootServerImpl.java:118)
+	... 14 more
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reportingController' defined in URL [jar:file:/C:/Users/bkuczynski/babun/.babun/cygwin/home/bkuczynski/workspace/priv/cnet_1_demo/platform/start/temp/temp_gateway/temp_1537431982247/gateway.war!/WEB-INF/classes!/pl/koziolekweb/cnet/controller/ReportingController.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'pl.koziolekweb.cnet.service.interfaces.SearchOrderService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:729)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:192)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1274)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1131)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at pl.koziolekweb.cnet.SpringBootApplicationStarter.main(SpringBootApplicationStarter.java:10)
+	... 28 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'pl.koziolekweb.cnet.service.interfaces.SearchOrderService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1509)
+	at org.springframework.beans.factory.support.DefaultListableBean
+[2018-09-20 10:26:54]Factory.doResolveDependency(DefaultListableBeanFactory.java:1104)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:815)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:721)
+	... 47 more
+
+[2018-09-20 10:26:54]	at com.jlupin.impl.manager.microserviceprocess.helper.process.JLupinProcessHelper.sendCommandToTransmissionEntryPoint(JLupinProcessHelper.java:1140)
+[2018-09-20 10:26:54]	at com.jlupin.impl.manager.microserviceprocess.helper.process.JLupinProcessHelper.startServers(JLupinProcessHelper.java:669)
+[2018-09-20 10:26:54]	... 10 more
+[2018-09-20 10:26:54]lock by type:MICROSERVICE_OS_PROCESS_MANIPULATION is unlock by operation:START
+[2018-09-20 10:26:54]lock by type:MICROSERVICE_HEALTH_CHECK is unlock by operation:START
+[2018-09-20 10:26:54]JMX manager started
+[2018-09-20 10:26:54]lock by type:TECHNICAL_PROCESS_HEALTH_CHECK is lock by operation:SELF_START
+[2018-09-20 10:26:54]lock by type:TECHNICAL_OS_PROCESS_MANIPULATION is lock by operation:SELF_START
+[2018-09-20 10:26:54]found class executor to load technical process executor:NGINX - class com.jlupin.impl.manager.technicalprocess.executor.impl.nginx.JLupinNginxWindowsTechnicalProcessExecutorImpl
+[2018-09-20 10:26:55]nginx pid does not exists in file, and it seems it is not turn on, so let`s start them
+[2018-09-20 10:26:55]start executing NGINX command:start for:WINDOWS
+[2018-09-20 10:27:00]process output after executing NGINX command:start for:WINDOWS is null
+[2018-09-20 10:27:02]nginx was started correctly
+[2018-09-20 10:27:02]lock by type:TECHNICAL_OS_PROCESS_MANIPULATION is unlock by operation:SELF_START
+[2018-09-20 10:27:02]lock by type:TECHNICAL_PROCESS_HEALTH_CHECK is unlock by operation:SELF_START
+[2018-09-20 10:27:02] 
+ --------------------------------------------------------------
+|RUNNING TECHNICAL PROCESSES:                                 |
+ --------------------------------------------------------------
+
+ --------------------------------------------------------------
+|TECHNICAL PROCESS SUMMARY:                                   |
+ --------------------------------------------------------------
+|NAME:NGINX                                                   |
+ --------------------------------------------------------------
+|PID:4280                                                     |
+ --------------------------------------------------------------
+
+[2018-09-20 10:27:02]
+ --------------------------------------------------------------
+|RUNNING MICROSERVICES:                                       |
+ --------------------------------------------------------------
+
+ --------------------------------------------------------------
+|MICROSERVICE SUMMARY:                                        |
+ --------------------------------------------------------------
+|MICROSERVICE NAME:order                                      |
+ --------------------------------------------------------------
+|TYPE:NATIVE                                                  |
+ --------------------------------------------------------------
+|SERVICE PORT TYPE:JLRMC - PORT:20014                         |
+ --------------------------------------------------------------
+|QUEUE PORT:20016                                             |
+ --------------------------------------------------------------
+|TRANSMISSION PORT:20018                                      |
+ --------------------------------------------------------------
+|PROCESS ID:4028                                              |
+ --------------------------------------------------------------
+
+ --------------------------------------------------------------
+|MICROSERVICE SUMMARY:                                        |
+ --------------------------------------------------------------
+|MICROSERVICE NAME:customer                                   |
+ --------------------------------------------------------------
+|TYPE:NATIVE                                                  |
+ --------------------------------------------------------------
+|SERVICE PORT TYPE:JLRMC - PORT:20006                         |
+ --------------------------------------------------------------
+|QUEUE PORT:20008                                             |
+ --------------------------------------------------------------
+|TRANSMISSION PORT:20010                                      |
+ --------------------------------------------------------------
+|PROCESS ID:3512                                              |
+ --------------------------------------------------------------
+
+
+[2018-09-20 10:27:02] 
+ --------------------------------------------------------------
+|RUNNING SERVERS SUMMARY                                       |
+ --------------------------------------------------------------
+|NAME                                          |PORT           |
+ --------------------------------------------------------------
+|JLRMC                                         |9090           |
+ --------------------------------------------------------------
+|ELASTIC_HTTP                                  |8082           |
+ --------------------------------------------------------------
+|QUEUE                                         |9095           |
+ --------------------------------------------------------------
+|TRANSMISSION                                  |9096           |
+ --------------------------------------------------------------
+|INFORMATION                                   |9097           |
+ --------------------------------------------------------------
+|INFORMATION_HTTP                              |9098           |
+ --------------------------------------------------------------
+
+[2018-09-20 10:27:02]JLupin Platform initialized correctly in:44265 milliseconds, process id:14460

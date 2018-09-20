@@ -1,0 +1,264 @@
+[2018-09-19 12:33:27]found APPLICATION section in configuration file and try create JLupinApplicationContainer by producer class:pl.koziolekweb.cnet.configuration.CustomerJLupinConfiguration
+[2018-09-19 12:33:27]produced with success JLupinApplicationContainer:pl.koziolekweb.cnet.configuration.CustomerJLupinConfiguration$1
+[2018-09-19 12:33:29]microservice:customer identity by os microservice id:13756 started correctly
+[2018-09-19 12:33:29]memory state for local server after start microservice:
+total memory:168.5 megabytes
+free  memory:83.6  megabytes
+used  memory:84.9  megabytes
+max   memory:228.0 megabytes
+[2018-09-19 12:33:29]microservice identity by os microservice id:13756 for microservice:customer initialized correctly
+[2018-09-19 12:33:29][JLPIT]-[PROCESS_ID]13756[/PROCESS_ID]-[/JLPIT]
+[2018-09-19 12:33:29][JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[2018-09-19 12:33:29][JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-09-19 12:33:29]user.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\application\customer
+[2018-09-19 12:33:29]temp.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\start\temp
+[2018-09-19 12:33:29]all microservers for microservice:customer started correctly
+[2018-09-19 12:33:29]servers are starting now and this operation takes so far:0 seconds (10 milliseconds)
+[2018-09-19 12:33:32]application container is loading now and this operation takes so far:2 seconds (2925 milliseconds)
+[2018-09-19 12:33:32]application container for:customer started correctly
+[2018-09-19 12:33:32]System.out and System.err was redirect to:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\logs\server\customer\customer_system_out_%g.log
+[2018-09-19 12:49:38]found APPLICATION section in configuration file and try create JLupinApplicationContainer by producer class:pl.koziolekweb.cnet.configuration.CustomerJLupinConfiguration
+[2018-09-19 12:49:38]produced with success JLupinApplicationContainer:pl.koziolekweb.cnet.configuration.CustomerJLupinConfiguration$1
+[2018-09-19 12:49:40]microservice:customer identity by os microservice id:10868 started correctly
+[2018-09-19 12:49:40]memory state for local server after start microservice:
+total memory:170.0 megabytes
+free  memory:85.6  megabytes
+used  memory:84.4  megabytes
+max   memory:228.0 megabytes
+[2018-09-19 12:49:40]microservice identity by os microservice id:10868 for microservice:customer initialized correctly
+[2018-09-19 12:49:40][JLPIT]-[PROCESS_ID]10868[/PROCESS_ID]-[/JLPIT]
+[2018-09-19 12:49:40][JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[2018-09-19 12:49:40][JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-09-19 12:49:40]user.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\application\customer
+[2018-09-19 12:49:40]temp.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\start\temp
+[2018-09-19 12:49:40]all microservers for microservice:customer started correctly
+[2018-09-19 12:49:40]servers are starting now and this operation takes so far:0 seconds (11 milliseconds)
+[2018-09-19 12:49:42]application container is loading now and this operation takes so far:2 seconds (2329 milliseconds)
+[2018-09-19 12:49:42]application container for:customer started correctly
+[2018-09-19 12:49:42]System.out and System.err was redirect to:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\logs\server\customer\customer_system_out_%g.log
+[2018-09-19 13:01:53]found APPLICATION section in configuration file and try create JLupinApplicationContainer by producer class:pl.koziolekweb.cnet.configuration.CustomerJLupinConfiguration
+[2018-09-19 13:01:53]produced with success JLupinApplicationContainer:pl.koziolekweb.cnet.configuration.CustomerJLupinConfiguration$1
+[2018-09-19 13:01:54]microservice:customer identity by os microservice id:15484 started correctly
+[2018-09-19 13:01:54]memory state for local server after start microservice:
+total memory:170.5 megabytes
+free  memory:86.5  megabytes
+used  memory:84.0  megabytes
+max   memory:228.0 megabytes
+[2018-09-19 13:01:54]microservice identity by os microservice id:15484 for microservice:customer initialized correctly
+[2018-09-19 13:01:54][JLPIT]-[PROCESS_ID]15484[/PROCESS_ID]-[/JLPIT]
+[2018-09-19 13:01:54][JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[2018-09-19 13:01:54][JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-09-19 13:01:54]user.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\application\customer
+[2018-09-19 13:01:54]temp.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\start\temp
+[2018-09-19 13:01:54]all microservers for microservice:customer started correctly
+[2018-09-19 13:01:54]servers are starting now and this operation takes so far:0 seconds (18 milliseconds)
+[2018-09-19 13:01:57]application container is loading now and this operation takes so far:2 seconds (2254 milliseconds)
+[2018-09-19 13:01:57]application container for:customer started correctly
+[2018-09-19 13:01:57]System.out and System.err was redirect to:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\logs\server\customer\customer_system_out_%g.log
+[2018-09-19 13:43:56]found APPLICATION section in configuration file and try create JLupinApplicationContainer by producer class:pl.koziolekweb.cnet.configuration.CustomerJLupinConfiguration
+[2018-09-19 13:43:56]produced with success JLupinApplicationContainer:pl.koziolekweb.cnet.configuration.CustomerJLupinConfiguration$1
+[2018-09-19 13:43:57]microservice:customer identity by os microservice id:8524 started correctly
+[2018-09-19 13:43:57]memory state for local server after start microservice:
+total memory:170.5 megabytes
+free  memory:84.9  megabytes
+used  memory:85.6  megabytes
+max   memory:228.0 megabytes
+[2018-09-19 13:43:57]microservice identity by os microservice id:8524 for microservice:customer initialized correctly
+[2018-09-19 13:43:57][JLPIT]-[PROCESS_ID]8524[/PROCESS_ID]-[/JLPIT]
+[2018-09-19 13:43:57][JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[2018-09-19 13:43:57][JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-09-19 13:43:57]user.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\application\customer
+[2018-09-19 13:43:57]temp.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\start\temp
+[2018-09-19 13:43:57]all microservers for microservice:customer started correctly
+[2018-09-19 13:43:57]servers are starting now and this operation takes so far:0 seconds (9 milliseconds)
+[2018-09-19 13:43:59]application container is loading now and this operation takes so far:1 seconds (1902 milliseconds)
+[2018-09-19 13:43:59]application container for:customer started correctly
+[2018-09-19 13:43:59]System.out and System.err was redirect to:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\logs\server\customer\customer_system_out_%g.log
+[2018-09-19 14:40:51]found APPLICATION section in configuration file and try create JLupinApplicationContainer by producer class:pl.koziolekweb.cnet.configuration.CustomerJLupinConfiguration
+[2018-09-19 14:40:51]produced with success JLupinApplicationContainer:pl.koziolekweb.cnet.configuration.CustomerJLupinConfiguration$1
+[2018-09-19 14:40:52]microservice:customer identity by os microservice id:4064 started correctly
+[2018-09-19 14:40:52]memory state for local server after start microservice:
+total memory:185.5 megabytes
+free  memory:101.8 megabytes
+used  memory:83.7  megabytes
+max   memory:228.0 megabytes
+[2018-09-19 14:40:52]microservice identity by os microservice id:4064 for microservice:customer initialized correctly
+[2018-09-19 14:40:52][JLPIT]-[PROCESS_ID]4064[/PROCESS_ID]-[/JLPIT]
+[2018-09-19 14:40:52][JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[2018-09-19 14:40:52][JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-09-19 14:40:52]user.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\application\customer
+[2018-09-19 14:40:52]temp.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\start\temp
+[2018-09-19 14:40:52]all microservers for microservice:customer started correctly
+[2018-09-19 14:40:52]servers are starting now and this operation takes so far:0 seconds (10 milliseconds)
+[2018-09-19 14:40:54]application container is loading now and this operation takes so far:1 seconds (1635 milliseconds)
+[2018-09-19 14:40:54]application container for:customer started correctly
+[2018-09-19 14:40:54]System.out and System.err was redirect to:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\logs\server\customer\customer_system_out_%g.log
+[2018-09-19 16:09:47]found APPLICATION section in configuration file and try create JLupinApplicationContainer by producer class:pl.koziolekweb.cnet.configuration.CustomerJLupinConfiguration
+[2018-09-19 16:09:47]produced with success JLupinApplicationContainer:pl.koziolekweb.cnet.configuration.CustomerJLupinConfiguration$1
+[2018-09-19 16:09:48]microservice:customer identity by os microservice id:1712 started correctly
+[2018-09-19 16:09:48]memory state for local server after start microservice:
+total memory:186.0 megabytes
+free  memory:101.3 megabytes
+used  memory:84.7  megabytes
+max   memory:228.0 megabytes
+[2018-09-19 16:09:48]microservice identity by os microservice id:1712 for microservice:customer initialized correctly
+[2018-09-19 16:09:48][JLPIT]-[PROCESS_ID]1712[/PROCESS_ID]-[/JLPIT]
+[2018-09-19 16:09:48][JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[2018-09-19 16:09:48][JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-09-19 16:09:49]user.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\application\customer
+[2018-09-19 16:09:49]temp.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\start\temp
+[2018-09-19 16:09:49]all microservers for microservice:customer started correctly
+[2018-09-19 16:09:49]servers are starting now and this operation takes so far:0 seconds (7 milliseconds)
+[2018-09-19 16:09:50]application container is loading now and this operation takes so far:1 seconds (1871 milliseconds)
+[2018-09-19 16:09:50]application container for:customer started correctly
+[2018-09-19 16:09:50]System.out and System.err was redirect to:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\logs\server\customer\customer_system_out_%g.log
+[2018-09-19 16:15:11]found APPLICATION section in configuration file and try create JLupinApplicationContainer by producer class:pl.koziolekweb.cnet.configuration.CustomerJLupinConfiguration
+[2018-09-19 16:15:11]produced with success JLupinApplicationContainer:pl.koziolekweb.cnet.configuration.CustomerJLupinConfiguration$1
+[2018-09-19 16:15:12]microservice:customer identity by os microservice id:8364 started correctly
+[2018-09-19 16:15:12]memory state for local server after start microservice:
+total memory:170.5 megabytes
+free  memory:83.5  megabytes
+used  memory:87.0  megabytes
+max   memory:228.0 megabytes
+[2018-09-19 16:15:12]microservice identity by os microservice id:8364 for microservice:customer initialized correctly
+[2018-09-19 16:15:12][JLPIT]-[PROCESS_ID]8364[/PROCESS_ID]-[/JLPIT]
+[2018-09-19 16:15:12][JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[2018-09-19 16:15:12][JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-09-19 16:15:12]user.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\application\customer
+[2018-09-19 16:15:12]temp.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\start\temp
+[2018-09-19 16:15:12]all microservers for microservice:customer started correctly
+[2018-09-19 16:15:12]servers are starting now and this operation takes so far:0 seconds (7 milliseconds)
+[2018-09-19 16:15:14]application container is loading now and this operation takes so far:1 seconds (1874 milliseconds)
+[2018-09-19 16:15:14]application container for:customer started correctly
+[2018-09-19 16:15:14]System.out and System.err was redirect to:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\logs\server\customer\customer_system_out_%g.log
+[2018-09-19 16:16:27]found APPLICATION section in configuration file and try create JLupinApplicationContainer by producer class:pl.koziolekweb.cnet.configuration.CustomerJLupinConfiguration
+[2018-09-19 16:16:28]produced with success JLupinApplicationContainer:pl.koziolekweb.cnet.configuration.CustomerJLupinConfiguration$1
+[2018-09-19 16:16:29]microservice:customer identity by os microservice id:13632 started correctly
+[2018-09-19 16:16:29]memory state for local server after start microservice:
+total memory:186.5 megabytes
+free  memory:100.8 megabytes
+used  memory:85.7  megabytes
+max   memory:228.0 megabytes
+[2018-09-19 16:16:29]microservice identity by os microservice id:13632 for microservice:customer initialized correctly
+[2018-09-19 16:16:29][JLPIT]-[PROCESS_ID]13632[/PROCESS_ID]-[/JLPIT]
+[2018-09-19 16:16:29][JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[2018-09-19 16:16:29][JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-09-19 16:16:29]user.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\application\customer
+[2018-09-19 16:16:29]temp.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\start\temp
+[2018-09-19 16:16:29]all microservers for microservice:customer started correctly
+[2018-09-19 16:16:29]servers are starting now and this operation takes so far:0 seconds (10 milliseconds)
+[2018-09-19 16:16:31]application container is loading now and this operation takes so far:2 seconds (2152 milliseconds)
+[2018-09-19 16:16:31]application container for:customer started correctly
+[2018-09-19 16:16:31]System.out and System.err was redirect to:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\logs\server\customer\customer_system_out_%g.log
+[2018-09-20 10:08:56]found APPLICATION section in configuration file and try create JLupinApplicationContainer by producer class:pl.koziolekweb.cnet.configuration.CustomerJLupinConfiguration
+[2018-09-20 10:08:56]produced with success JLupinApplicationContainer:pl.koziolekweb.cnet.configuration.CustomerJLupinConfiguration$1
+[2018-09-20 10:08:57]microservice:customer identity by os microservice id:11184 started correctly
+[2018-09-20 10:08:57]memory state for local server after start microservice:
+total memory:170.0 megabytes
+free  memory:86.1  megabytes
+used  memory:83.9  megabytes
+max   memory:228.0 megabytes
+[2018-09-20 10:08:57]microservice identity by os microservice id:11184 for microservice:customer initialized correctly
+[2018-09-20 10:08:57][JLPIT]-[PROCESS_ID]11184[/PROCESS_ID]-[/JLPIT]
+[2018-09-20 10:08:57][JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[2018-09-20 10:08:57][JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-09-20 10:08:57]user.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\application\customer
+[2018-09-20 10:08:57]temp.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\start\temp
+[2018-09-20 10:08:57]all microservers for microservice:customer started correctly
+[2018-09-20 10:08:57]servers are starting now and this operation takes so far:0 seconds (12 milliseconds)
+[2018-09-20 10:08:59]application container is loading now and this operation takes so far:1 seconds (1754 milliseconds)
+[2018-09-20 10:08:59]application container for:customer started correctly
+[2018-09-20 10:08:59]System.out and System.err was redirect to:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\logs\server\customer\customer_system_out_%g.log
+[2018-09-20 10:12:45]found APPLICATION section in configuration file and try create JLupinApplicationContainer by producer class:pl.koziolekweb.cnet.configuration.CustomerJLupinConfiguration
+[2018-09-20 10:12:45]produced with success JLupinApplicationContainer:pl.koziolekweb.cnet.configuration.CustomerJLupinConfiguration$1
+[2018-09-20 10:12:47]microservice:customer identity by os microservice id:7964 started correctly
+[2018-09-20 10:12:47]memory state for local server after start microservice:
+total memory:172.0 megabytes
+free  memory:87.1  megabytes
+used  memory:84.9  megabytes
+max   memory:228.0 megabytes
+[2018-09-20 10:12:47]microservice identity by os microservice id:7964 for microservice:customer initialized correctly
+[2018-09-20 10:12:47][JLPIT]-[PROCESS_ID]7964[/PROCESS_ID]-[/JLPIT]
+[2018-09-20 10:12:47][JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[2018-09-20 10:12:47][JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-09-20 10:12:47]user.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\application\customer
+[2018-09-20 10:12:47]temp.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\start\temp
+[2018-09-20 10:12:47]all microservers for microservice:customer started correctly
+[2018-09-20 10:12:47]servers are starting now and this operation takes so far:0 seconds (12 milliseconds)
+[2018-09-20 10:12:51]application container is loading now and this operation takes so far:3 seconds (3327 milliseconds)
+[2018-09-20 10:12:51]application container for:customer started correctly
+[2018-09-20 10:12:51]System.out and System.err was redirect to:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\logs\server\customer\customer_system_out_%g.log
+[2018-09-20 10:26:39]found APPLICATION section in configuration file and try create JLupinApplicationContainer by producer class:pl.koziolekweb.cnet.configuration.CustomerJLupinConfiguration
+[2018-09-20 10:26:39]produced with success JLupinApplicationContainer:pl.koziolekweb.cnet.configuration.CustomerJLupinConfiguration$1
+[2018-09-20 10:26:40]microservice:customer identity by os microservice id:3512 started correctly
+[2018-09-20 10:26:40]memory state for local server after start microservice:
+total memory:134.0 megabytes
+free  memory:41.2  megabytes
+used  memory:92.8  megabytes
+max   memory:256.0 megabytes
+[2018-09-20 10:26:40]microservice identity by os microservice id:3512 for microservice:customer initialized correctly
+[2018-09-20 10:26:40][JLPIT]-[PROCESS_ID]3512[/PROCESS_ID]-[/JLPIT]
+[2018-09-20 10:26:40][JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[2018-09-20 10:26:40][JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-09-20 10:26:40]user.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\application\customer
+[2018-09-20 10:26:40]temp.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\start\temp
+[2018-09-20 10:26:40]all microservers for microservice:customer started correctly
+[2018-09-20 10:26:40]servers are starting now and this operation takes so far:0 seconds (17 milliseconds)
+[2018-09-20 10:26:42]application container is loading now and this operation takes so far:1 seconds (1983 milliseconds)
+[2018-09-20 10:26:42]application container for:customer started correctly
+[2018-09-20 10:26:42]System.out and System.err was redirect to:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\logs\server\customer\customer_system_out_%g.log
+[2018-09-20 10:27:58]found APPLICATION section in configuration file and try create JLupinApplicationContainer by producer class:pl.koziolekweb.cnet.configuration.CustomerJLupinConfiguration
+[2018-09-20 10:27:58]produced with success JLupinApplicationContainer:pl.koziolekweb.cnet.configuration.CustomerJLupinConfiguration$1
+[2018-09-20 10:27:59]microservice:customer identity by os microservice id:900 started correctly
+[2018-09-20 10:27:59]memory state for local server after start microservice:
+total memory:135.0 megabytes
+free  memory:44.6  megabytes
+used  memory:90.4  megabytes
+max   memory:256.0 megabytes
+[2018-09-20 10:27:59]microservice identity by os microservice id:900 for microservice:customer initialized correctly
+[2018-09-20 10:27:59][JLPIT]-[PROCESS_ID]900[/PROCESS_ID]-[/JLPIT]
+[2018-09-20 10:27:59][JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[2018-09-20 10:27:59][JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-09-20 10:27:59]user.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\application\customer
+[2018-09-20 10:27:59]temp.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\start\temp
+[2018-09-20 10:27:59]all microservers for microservice:customer started correctly
+[2018-09-20 10:27:59]servers are starting now and this operation takes so far:0 seconds (10 milliseconds)
+[2018-09-20 10:28:01]application container is loading now and this operation takes so far:1 seconds (1701 milliseconds)
+[2018-09-20 10:28:01]application container for:customer started correctly
+[2018-09-20 10:28:01]System.out and System.err was redirect to:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\logs\server\customer\customer_system_out_%g.log
+[2018-09-20 11:14:42]found APPLICATION section in configuration file and try create JLupinApplicationContainer by producer class:pl.koziolekweb.cnet.configuration.CustomerJLupinConfiguration
+[2018-09-20 11:14:42]produced with success JLupinApplicationContainer:pl.koziolekweb.cnet.configuration.CustomerJLupinConfiguration$1
+[2018-09-20 11:14:43]microservice:customer identity by os microservice id:2312 started correctly
+[2018-09-20 11:14:43]memory state for local server after start microservice:
+total memory:133.0 megabytes
+free  memory:39.6  megabytes
+used  memory:93.4  megabytes
+max   memory:256.0 megabytes
+[2018-09-20 11:14:43]microservice identity by os microservice id:2312 for microservice:customer initialized correctly
+[2018-09-20 11:14:43][JLPIT]-[PROCESS_ID]2312[/PROCESS_ID]-[/JLPIT]
+[2018-09-20 11:14:43][JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[2018-09-20 11:14:43][JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-09-20 11:14:43]user.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\application\customer
+[2018-09-20 11:14:43]temp.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\start\temp
+[2018-09-20 11:14:43]all microservers for microservice:customer started correctly
+[2018-09-20 11:14:45]application container is loading now and this operation takes so far:1 seconds (1964 milliseconds)
+[2018-09-20 11:14:45]application container for:customer started correctly
+[2018-09-20 11:14:45]System.out and System.err was redirect to:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\logs\server\customer\customer_system_out_%g.log
+[2018-09-20 11:22:43]found APPLICATION section in configuration file and try create JLupinApplicationContainer by producer class:pl.koziolekweb.cnet.configuration.CustomerJLupinConfiguration
+[2018-09-20 11:22:43]produced with success JLupinApplicationContainer:pl.koziolekweb.cnet.configuration.CustomerJLupinConfiguration$1
+[2018-09-20 11:22:44]microservice:customer identity by os microservice id:3808 started correctly
+[2018-09-20 11:22:44]memory state for local server after start microservice:
+total memory:132.0 megabytes
+free  memory:28.3  megabytes
+used  memory:103.7 megabytes
+max   memory:256.0 megabytes
+[2018-09-20 11:22:44]microservice identity by os microservice id:3808 for microservice:customer initialized correctly
+[2018-09-20 11:22:44][JLPIT]-[PROCESS_ID]3808[/PROCESS_ID]-[/JLPIT]
+[2018-09-20 11:22:44][JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[2018-09-20 11:22:44][JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-09-20 11:22:44]user.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\application\customer
+[2018-09-20 11:22:44]temp.dir:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\start\temp
+[2018-09-20 11:22:44]all microservers for microservice:customer started correctly
+[2018-09-20 11:22:47]application container is loading now and this operation takes so far:2 seconds (2483 milliseconds)
+[2018-09-20 11:22:47]application container for:customer started correctly
+[2018-09-20 11:22:47]System.out and System.err was redirect to:C:\Users\bkuczynski\babun\.babun\cygwin\home\bkuczynski\workspace\priv\cnet_1_demo\platform\logs\server\customer\customer_system_out_%g.log
