@@ -5,10 +5,10 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>JLupin – usługi w javie dla niezaawansowanych</title>
+    <title>How to build flexible applications with JLupin</title>
 
     <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/theme/simple.css">
 
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -40,12 +40,9 @@
 
         .reveal .footer {
             position: absolute;
-            bottom: 0.0em;
-            right: 0.0em;
+            bottom: 0.2em;
+            right: 5em;
             font-size: 0.5em;
-        }
-        .reveal .footer p small{
-            padding-top: 0.5em;
         }
         .reveal .code{
             font-family: Courier, 'Courier New', monospace;
@@ -54,21 +51,31 @@
         .reveal .with-background {
             background-color: white;
         }
+
+        .reveal {
+            background: url("img/geecon_slide-02.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        .reveal section img{
+            border: none;
+        }
+
     </style>
 </head>
 <body>
 <div class="reveal">
+    <div class='footer'>
+        <p>
+            <small><a href="http://koziolekweb.pl">Bartek „Koziołek”
+                Kuczyński</a> / <a
+                    href="http://twitter.com/koziolek">@koziolek</a></small>
+        </p>
+    </div>
     <div class="slides">
-        <div class='footer'>
-            <p>
-                <small><a href="http://koziolekweb.pl">Bartek „Koziołek”
-                    Kuczyński</a> / <a href="http://twitter.com/koziolek">@koziolek</a></small>
-                <img src="img/JDD_logo.png" width="50"/>
-            </p>
-        </div>
         <section>
-            <h1>JLupin</h1>
-            <h2>usługi w javie dla niezaawansowanych</h2>
+            <h2>How to build flexible applications</h2>
+            <h2>with JLupin</h2>
             <p>
                 <a href="http://koziolekweb.pl">Bartek „Koziołek”
                     Kuczyński</a> / <a
@@ -135,7 +142,7 @@ public interface HelloLocalHome extends EJBLocalHome {
             </section>
             <section>
                 <h3>Setup project</h3>
-                <p class="fragment">JLupin has IDE tooling <samp class="fragment">(with bugs)</samp></p>
+                <p class="fragment">JLupin has IDE tooling</p>
                 <p class="fragment">JLupin is Spring friendly</p>
                 <p class="fragment">JLupin is maven based</p>
             </section>
