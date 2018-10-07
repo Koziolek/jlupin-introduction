@@ -20,11 +20,6 @@ public class GatewaySpringConfiguration {
 		return JLupinClientUtil.generateInnerMicroserviceLoadBalancerDelegator(PortType.JLRMC);
 	}
 
-	// @Bean(name = "exampleService")
-	// public ExampleService getExampleService() {
-	//     return JLupinClientUtil.generateRemote(getJLupinDelegator(), "example-microservice", ExampleService.class);
-	// }
-
 	@Bean(name ="SearchCustomerService")
 	public SearchCustomerService searchCustomerService(){
 		return JLupinClientUtil.generateRemote(getJLupinDelegator(), "customer", SearchCustomerService.class);
