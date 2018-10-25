@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>JLupin – usługi w javie dla niezaawansowanych</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .column {
+            flex: 1;
+        }
+
+        .to-left {
+            text-align: left;
+        }
+
+        .to-right {
+            text-align: right;
+        }
+
+        .reveal .footer {
+            position: absolute;
+            bottom: 0.0em;
+            right: 0.0em;
+            font-size: 0.5em;
+        }
+        .reveal .footer p small{
+            padding-top: 0.5em;
+        }
+        .reveal .code{
+            font-family: Courier, 'Courier New', monospace;
+        }
+
+        .reveal .with-background {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <div class='footer'>
+            <p>
+                <small><a href="http://koziolekweb.pl">Bartek „Koziołek”
+                    Kuczyński</a> / <a href="http://twitter.com/koziolek">@koziolek</a></small>
+                <!--<img src="img/JDD_logo.png" width="50"/>-->
+            </p>
+        </div>
+        <section>
+            <h1>JLupin</h1>
+            <h2>usługi w javie dla niezaawansowanych</h2>
+            <p>
+                <a href="http://koziolekweb.pl">Bartek „Koziołek”
+                    Kuczyński</a> / <a
+                    href="http://twitter.com/koziolek">@koziolek</a>
+            </p>
+        </section>
+        <section>
+            <section>
+                <h2>A little bite of history</h2>
+            </section>
+            <section>
+                <h3>Good old J2EE</h3>
+                <pre><code class="hljs" data-trim contenteditable>
+package hello;
+
+import javax.ejb.*;
+import java.rmi.*;
+
+public interface HelloHome extends EJBHome {
+  public Hello create() throws CreateException, RemoteException;
+  public Hello create(String message) throws CreateException, RemoteException;
+  public Hello create(Collection messages) throws CreateException, RemoteException;
+}					</code></pre>
+            </section>
+            <section>
+                                <pre><code class="hljs" data-trim contenteditable>
+package hello;
+
+import javax.ejb.*;
+
+public interface HelloLocalHome extends EJBLocalHome {
+  public HelloLocal create() throws CreateException;
+  public HelloLocal create(String message) throws CreateException;
+  public HelloLocal create(Collection messages) throws CreateException;
+}					</code></pre>
+            </section>
+            <section>
+                <h3>When you should use...</h3>
+                <p class="fragment">Remote?</p>
+                <p class="fragment">Local?</p>
+            </section>
+            <section>
+                <h3>You don't know</h3>
+                <p class="fragment">I don't know too.</p>
+            </section>
+            <section>
+                <h3>Fundamental issue</h3>
+                <p class="fragment">Solution – make everything remote</p>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h2>Simple application</h2>
+            </section>
+            <section>
+                <h3>Bank</h3>
+                <img src="img/jdd-app-1.png" alt="Simple bank" height="500"/>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h2>Demo 1</h2>
+            </section>
+            <section>
+                <h3>Setup project</h3>
+                <p class="fragment">JLupin has IDE tooling <samp class="fragment">(with bugs)</samp></p>
+                <p class="fragment">JLupin is Spring friendly</p>
+                <p class="fragment">JLupin is maven based</p>
+            </section>
+        </section>
+
+        <section><h2>App Switch</h2></section>
+
+        <section>
+            <section>
+                <h2>Demo 2</h2>
+            </section>
+            <section>
+                <h3>Call me maybe</h3>
+                <p class="fragment">JLupin does not contaminate code</p>
+                <p class="fragment">JLupin contaminate configuration</p>
+                <p class="fragment">Configuration is <samp class="code">String</samp> based</p>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h2>Demo 3</h2>
+            </section>
+            <section>
+                <h3>Deployment</h3>
+                <p class="fragment">CI/CD ready</p>
+                <p class="fragment">Manual deployment possible</p>
+            </section>
+            <section>
+                <h3>What is JLupin?</h3>
+                <div class="container fragment">
+                    <p class="fragment column with-background"><img src="img/jdd-2018-elements-jl1.png" alt=""></p>
+                    <p class="fragment column with-background"><img src="img/jdd-2018-elements-jl2.png" alt=""></p>
+                    <p class="fragment column with-background"><img src="img/jdd-2018-elements-jl3.png" alt=""></p>
+                    <p class="fragment column with-background"><img src="img/jdd-2018-elements-jl4.png" alt=""></p>
+                </div>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h2>Demo 4</h2>
+            </section>
+            <section>
+                <h3>Maintenance</h3>
+                <p class="fragment">Zero downtime</p>
+                <p class="fragment">Web console</p>
+                <p class="fragment">In project configuration</p>
+            </section>
+            <section>
+                <h3>How is JLupin works?</h3>
+                <p class="with-background"><img src="img/jdd-2018-jlupin-start-seq.png" alt=""></p>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h2>Other stuff</h2>
+                <p class="fragment">Edge balancer</p>
+                <p class="fragment">JMX Extractor</p>
+                <p class="fragment">Reactive channels & queues</p>
+            </section>
+        </section>
+
+        <section>
+            <h2>Q&A</h2>
+            <p>
+                <small><a href="http://koziolekweb.pl">Bartek „Koziołek”
+                    Kuczyński</a> / <a
+                        href="http://twitter.com/koziolek">@koziolek</a></small>
+            </p>
+        </section>
+    </div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        dependencies: [
+            {src: 'plugin/markdown/marked.js'},
+            {src: 'plugin/markdown/markdown.js'},
+            {src: 'plugin/notes/notes.js', async: true},
+            {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+        ]
+    });
+</script>
+</body>
+</html>
